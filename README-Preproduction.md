@@ -14,10 +14,13 @@ Features
       - Explosive stage
 
 User Stories
-1. Be able to view the wheel and use the mouse to determine which stage of the cycle to the top
-2. Be able to view more information about what defines the cycle stage at the top of the wheel
-3. Be able to
-
+1) Be able to view the wheel and use the mouse to determine which stage of the cycle to the top
+2) Be able to view more information about what defines the cycle stage at the top of the wheel
+3) Be able to select and view victim characteristics depending on cycle stage
+4) Be able to select and view abuser characteristics depending on cycle stage
+5) Be able to see the types of abuse that an abuser might engage in
+6) Be able to find resources for victims
+    Maybe find an api with news articles about resources at locations?
 
 
 
