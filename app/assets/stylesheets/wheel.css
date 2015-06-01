@@ -1,3 +1,10 @@
+#content {
+  width: 900px;
+  height: 500px;
+  position:relative;
+}
+
+
 .piece {
   position:absolute;
   width:300px;
@@ -32,7 +39,6 @@
 }
 
 .piece[data-start="0"] {
-  -webkit-transform: rotate(0deg);
   transform:rotate(0deg);
 }
 
