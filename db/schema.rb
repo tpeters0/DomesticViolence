@@ -11,35 +11,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150602151855) do
+ActiveRecord::Schema.define(version: 20150602155432) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "attitudes", force: :cascade do |t|
-    t.integer  "roles_id"
-    t.integer  "stages_id"
-    t.text     "description"
+    t.integer "roles_id"
+    t.integer "stages_id"
+    t.text    "description"
   end
 
   create_table "behaviors", force: :cascade do |t|
-    t.integer  "roles_id"
-    t.integer  "stages_id"
-    t.text     "description"
+    t.integer "roles_id"
+    t.integer "stages_id"
+    t.text    "description"
+  end
+
+  create_table "butterflies", force: :cascade do |t|
+    t.text "name"
   end
 
   create_table "cycles", force: :cascade do |t|
-    t.text     "cycle_name"
+    t.text "cycle_name"
   end
 
   create_table "roles", force: :cascade do |t|
-    t.text     "role_name"
-    t.text     "description"
+    t.text "role_name"
+    t.text "description"
   end
 
   create_table "stages", force: :cascade do |t|
-    t.text     "stage_name"
-    t.text     "description"
+    t.text "stage_name"
+    t.text "description"
+  end
+
+  create_table "users", force: :cascade do |t|
   end
 
 end
