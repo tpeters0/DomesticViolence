@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= jquery-2.1.4.min
 //= require turbolinks
 //= require_tree .
+//= require_script
+//= interact.min

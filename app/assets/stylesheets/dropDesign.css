@@ -1,0 +1,49 @@
+#board{
+
+}
+
+#red{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+
+
+}
+
+#blue{
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+
+}
+
+.dropzone {
+  background-image: '../assets/images/butterfly.svg';
+
+}
+
+
+.drop-active {
+  border: 3px solid;
+  border-color: yellow;
+}
+
+
+.drop-target {
+  border-color: green;
+  border-style: solid;
+}
+
+.drag-drop {
+  display: inline-block;
+  color: #fff;
+  border: solid 2px black;
+
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.drag-drop.can-drop {
+  color: yellow;
+  background-color: yellow;
+}
