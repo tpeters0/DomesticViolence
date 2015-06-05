@@ -1,6 +1,6 @@
 class LandingController < ApplicationController
   def index
-    render 'landing.html'
+    render 'landing.html.erb'
   end
 
 end

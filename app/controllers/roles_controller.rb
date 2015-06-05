@@ -1,6 +1,6 @@
 class RolesController < ApplicationController
   def index
-    @roles = Roles.all
+    @roles = Role.all
   end
 
 end
