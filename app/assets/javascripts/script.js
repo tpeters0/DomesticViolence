@@ -1,11 +1,12 @@
 $(document).ready(function(){
+  console.log("this works!")
+
+    $('#hm-text').click (function(event){
+      event.preventDefault()
+      console.log("clicked!")
+      $('this').fadeOut({
+
+      }, 100);
+    })
 
 });
-
-var main = function(){
-  $('honeymoon').click (function(){
-    $('this').animate({
-      fill: green
-    }, 1000);
-  });
-}
