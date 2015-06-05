@@ -1,4 +1,5 @@
 class Role < ActiveRecord::Base
   belongs_to :cycle
-  has_many   :behaviors, :attitudes
+  has_many   :behaviors
+  has_many   :attitudes
 end
