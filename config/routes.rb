@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root to: 'landing#index'
+  root to: 'cycles#index'
 
   resources :users
   resources :cycles
