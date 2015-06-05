@@ -15,16 +15,43 @@
  *= require_wheel.css
  */
 
-
+body{
+  background-color: #222222;
+}
 
 h1{
   color:purple;
 }
 
+#tension:hover{
+  fill:yellow;
+}
+
+
+#explosive:hover{
+  fill: red;
+}
+
+#honeymoon:hover{
+  fill: blue;
+}
+
 .cycle-view{
+  position:relative;
   margin:auto;
   width:600px;
   height:600px;
   transform:rotateZ(0deg);
   transform-origin: 50% 50%;
+}
+
+#wheel-title{
+  position:absolute;
+  top:200px;
+  left:150px;
+  font-family:fantasy;
+  font-size: 3em;
+  width: 300px;
+  text-align:center;
+
 }
