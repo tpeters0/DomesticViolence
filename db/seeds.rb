@@ -40,67 +40,67 @@ roles = [
   },
 ]
 
-roless.each do |roles_hash|
-  Role.create!(role_hash)
+roles.each do |roles_hash|
+  Role.create!(roles_hash)
 end
 
 behaviors = [
   {
     role_id:     "Abuser",
-    stage_id:    "Honeymoon"
+    stage_id:    "Honeymoon",
     description: "Promises to change and not repeat the abuse"
   },
   {
     role_id:     "Abuser",
-    stage_id:    "Honeymoon"
+    stage_id:    "Honeymoon",
     description: "Offers gifts and pays special attention to the other person"
   },
 
   {
     role_id:     "Abuser",
-    stage_id:    "Honeymoon"
+    stage_id:    "Honeymoon",
     description: "Begs for forgiveness"
   },
 
   {
     role_id:     "Victim",
-    stage_id:    "Honeymoon"
+    stage_id:    "Honeymoon",
     description: "Warily accepts apologies and offers forgiveness"
   },
 
   {
     role_id:     "Victim",
-    stage_id:    "Honeymoon"
+    stage_id:    "Honeymoon",
     description: "Does activities that are enjoyable with the other person"
   },
 
   {
     role_id:     "Abuser",
-    stage_id:    "Tension"
+    stage_id:    "Tension",
     description: "Increases aggressive behavior towards objects"
   },
 
   {
     role_id:     "Abuser",
-    stage_id:    "Tension"
+    stage_id:    "Tension",
     description: "Increases verbal abuse towards the victim"
   },
 
   {
     role_id:     "Victim",
-    stage_id:    "Tension"
+    stage_id:    "Tension",
     description: "Alters behavior to avoid triggering aggression"
   },
 
   {
     role_id:     "Abuser",
-    stage_id:    "Explosive"
+    stage_id:    "Explosive",
     description: "May use alcohol in excess and use that as an excuse for violence"
   },
 
   {
     role_id:     "Abuser",
-    stage_id:    "Explosive"
+    stage_id:    "Explosive",
     description: "May stimulate confrontation to get it over with"
   },
 ]
