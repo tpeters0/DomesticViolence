@@ -11,7 +11,7 @@ User.destroy_all
 stages = [
   {
     stage_name: "Honeymoon Stage",
-    description: "This is a loving, non-violent time, where the abuser may take  responsibility for the violent behavior, begs for forgiveness, promises to change for the better, or gives gifts to the victim"
+    description: "This is a loving, non-violent time, often where the abuser tries to compensate for previous mistreatment of the other"
   },
   {
     stage_name: "Tension-Building Stage",
@@ -19,7 +19,7 @@ stages = [
   },
   {
     stage_name: "Explosive Stage",
-    description: "Seeking a release from the build-up of stress and tension, the abuser makes a choice about how to strike out and does it."
+    description: "Seeking a release from the build-up of stress and tension, the abuser makes a choice about how to strike out and does it"
   },
 
 ]
@@ -36,7 +36,7 @@ roles = [
   },
   {
     role_name: "Victim",
-    description: "One who is trapped physically, financially, or emotionally by someone close and often suffers in mind, body, or spirit."
+    description: "One who is trapped physically, financially, or emotionally by someone close and often suffers in mind, body, or spirit"
   },
 ]
 

@@ -19,7 +19,19 @@ body{
 }
 
 h1{
+  text-align:center;
   color:purple;
+}
+
+p{
+  padding: 4px;
+  text-align:center;
+}
+
+li{
+  left: 100px;
+  padding: 10px;
+  list-style-type: none;
 }
 
 footer{
