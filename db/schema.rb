@@ -17,14 +17,14 @@ ActiveRecord::Schema.define(version: 20150602155432) do
   enable_extension "plpgsql"
 
   create_table "attitudes", force: :cascade do |t|
-    t.integer "roles_id"
-    t.integer "stages_id"
+    t.integer "role_id"
+    t.integer "stage_id"
     t.text    "description"
   end
 
   create_table "behaviors", force: :cascade do |t|
-    t.integer "roles_id"
-    t.integer "stages_id"
+    t.integer "role_id"
+    t.integer "stage_id"
     t.text    "description"
   end
 
@@ -33,16 +33,16 @@ ActiveRecord::Schema.define(version: 20150602155432) do
   end
 
   create_table "cycles", force: :cascade do |t|
-    t.text "cycle_name"
+    t.text "name"
   end
 
   create_table "roles", force: :cascade do |t|
-    t.text "role_name"
+    t.text "name"
     t.text "description"
   end
 
   create_table "stages", force: :cascade do |t|
-    t.text "stage_name"
+    t.text "name"
     t.text "description"
   end
 

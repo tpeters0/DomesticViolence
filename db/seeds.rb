@@ -10,15 +10,15 @@ User.destroy_all
 
 stages = [
   {
-    stage_name: "Honeymoon Stage",
+    name: "Honeymoon Stage",
     description: "This is a loving, non-violent time, often where the abuser tries to compensate for previous mistreatment of the other"
   },
   {
-    stage_name: "Tension-Building Stage",
+    name: "Tension-Building Stage",
     description: "The demands on and stresses of the relationship increase"
   },
   {
-    stage_name: "Explosive Stage",
+    name: "Explosive Stage",
     description: "Seeking a release from the build-up of stress and tension, the abuser makes a choice about how to strike out and does it"
   },
 
@@ -31,11 +31,11 @@ end
 
 roles = [
   {
-    role_name: "Abuser",
+    name: "Abuser",
     description: "Generally, one who tries to compensate for feeling like he or she is powerless by asserting unhealthy control over someone close"
   },
   {
-    role_name: "Victim",
+    name: "Victim",
     description: "One who is trapped physically, financially, or emotionally by someone close and often suffers in mind, body, or spirit"
   },
 ]
@@ -46,61 +46,65 @@ end
 
 behaviors = [
   {
-    role_id:     "Abuser",
-    stage_id:    "Honeymoon",
+    role:        Role.find_by(name: "Abuser"),
+    stage:       Stage.find_by(name: "Honeymoon Stage"),
     description: "Promises to change and not repeat the abuse"
   },
   {
-    role_id:     "Abuser",
-    stage_id:    "Honeymoon",
+    role:        Role.find_by(name: "Abuser"),
+    stage:       Stage.find_by(name: "Honeymoon Stage"),
     description: "Offers gifts and pays special attention to the other person"
   },
 
   {
-    role_id:     "Abuser",
-    stage_id:    "Honeymoon",
+    role:        Role.find_by(name: "Abuser"),
+    stage:       Stage.find_by(name: "Honeymoon Stage"),
     description: "Begs for forgiveness"
   },
 
   {
-    role_id:     "Victim",
-    stage_id:    "Honeymoon",
+    role:        Role.find_by(name: "Victim"),
+    stage:       Stage.find_by(name: "Honeymoon Stage"),
     description: "Warily accepts apologies and offers forgiveness"
   },
 
   {
-    role_id:     "Victim",
-    stage_id:    "Honeymoon",
+    role:        Role.find_by(name: "Victim"),
+    stage:       Stage.find_by(name: "Honeymoon Stage"),
     description: "Does activities that are enjoyable with the other person"
   },
 
   {
-    role_id:     "Abuser",
-    stage_id:    "Tension",
+    role:        Role.find_by(name: "Abuser"),
+    stage:       Stage.find_by(name: "Tension-Building Stage"),
     description: "Increases aggressive behavior towards objects"
   },
 
   {
-    role_id:     "Abuser",
-    stage_id:    "Tension",
+    role:        Role.find_by(name: "Abuser"),
+    stage:       Stage.find_by(name: "Tension-Building Stage"),
     description: "Increases verbal abuse towards the victim"
   },
 
   {
-    role_id:     "Victim",
-    stage_id:    "Tension",
+    role:        Role.find_by(name: "Victim"),
+    stage:       Stage.find_by(name: "Tension-Building Stage"),
     description: "Alters behavior to avoid triggering aggression"
   },
 
   {
-    role_id:     "Abuser",
-    stage_id:    "Explosive",
+    role:        Role.find_by(name: "Abuser"),
+    stage:       Stage.find_by(name: "Explosive Stage"),
     description: "May use alcohol in excess and use that as an excuse for violence"
   },
 
   {
-    role_id:     "Abuser",
-    stage_id:    "Explosive",
-    description: "May stimulate confrontation to get it over with"
+    role:        Role.find_by(name: "Abuser"),
+    stage:       Stage.find_by(name:"Explosive Stage"),
+    description: "May stimulate confrontation to get the 'event' over with"
   },
 ]
+
+behaviors.each do |behaviors_hash|
+  Behavior.create!(behaviors_hash)
+end
