@@ -3,6 +3,7 @@ class CreateStages < ActiveRecord::Migration
     create_table :stages do |t|
       t.text     :name
       t.text     :description
+      t.references :cycle
     end
   end
 end

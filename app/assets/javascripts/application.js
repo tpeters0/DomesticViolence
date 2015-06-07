@@ -14,5 +14,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= interact.min
+//= require paper-full.min.js
+//= require interact.min
 //= require_tree .

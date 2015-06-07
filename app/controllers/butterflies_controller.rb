@@ -23,5 +23,6 @@ class ButterfliesController < ApplicationController
     def butterfly_params
       params.require(:butterfly).permit(:name)
     end
-
+  end
+  
 end

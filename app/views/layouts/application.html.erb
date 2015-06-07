@@ -5,11 +5,16 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= javascript_include_tag 'script' %>
+  <%= javascript_include_tag 'paper_script' %>
   <%= csrf_meta_tags %>
 
 </head>
 <body>
-
+  <div id="link-icon">
+    <%= link_to butterflies_path(@butterflies) do %>
+    <%= image_tag ('butterfly-sm.png') %>
+    <% end %>
+  </div>
 
 <%= yield %>
 
