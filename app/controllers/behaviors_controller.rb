@@ -3,4 +3,8 @@ class BehaviorsController < ApplicationController
     @behaviors = Behavior.all
   end
 
+  def show
+    @behavior = Behavior.find(params[:id])
+  end
+
 end

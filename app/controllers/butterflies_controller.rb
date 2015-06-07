@@ -3,4 +3,8 @@ class ButterfliesController < ApplicationController
     @butterflies = Butterfly.all
   end
 
+  def show
+    @butterfly = Butterfly.find(params[:id])
+  end
+
 end

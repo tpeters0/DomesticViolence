@@ -269,6 +269,23 @@ attitudes = [
     description: "shame or guilt over his or her behavior"
   },
 
+  {
+    role:        Role.find_by(name: "Victim"),
+    stage:       Stage.find_by(name:"Honeymoon Stage"),
+    description: "guilty about thoughts of leaving the abuser"
+  },
+
+  {
+    role:        Role.find_by(name: "Victim"),
+    stage:       Stage.find_by(name:"Honeymoon Stage"),
+    description: "the desire to escape the abuse, but hopeful that things will be better"
+  },
+
+  {
+    role:        Role.find_by(name: "Victim"),
+    stage:       Stage.find_by(name:"Honeymoon Stage"),
+    description: "depressed and still trapped, possibly"
+  },
 
 
 ]
