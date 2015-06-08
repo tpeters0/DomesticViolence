@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Domestic Abuse</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= javascript_include_tag 'script' %>
-  <%= javascript_include_tag 'paper_script' %>
-  <%= csrf_meta_tags %>
+  <head>
+    <title>Domestic Abuse</title>
+     <%= stylesheet_link_tag    'application', media: 'all' %>
+     <%= javascript_include_tag 'application' %>
+     <%= javascript_include_tag 'script' %>
+     <%= csrf_meta_tags %>
 
-</head>
-<body>
-  <div id="link-icon">
-    <%= link_to butterflies_path(@butterflies) do %>
-    <%= image_tag ('butterfly-sm.png') %>
-    <% end %>
-  </div>
+  </head>
 
-<%= yield %>
+  <body>
+    <div id="wrapper">
+	  	<div id="header"></div>
+		  <div id="content">
+         <%= yield %>
 
+      </div>
+		  <div id="footer">
+        <p>Domestic Abuse Awareness, © 2015 </p>
+      </div>
+	  </div>
 
-<footer>
-  <p>Domestic Abuse Awareness, © 2015 </p>
-</footer>
-</body>
+  </body>
 </html>

@@ -20,7 +20,12 @@ body{
 
 h1{
   text-align:center;
-  color:purple;
+  font-size: 3em;
+  color:#4A2273;
+}
+
+h2{
+  text-align: center;
 }
 
 p{
@@ -34,15 +39,21 @@ li{
   list-style-type: none;
 }
 
-footer{
+#footer{
   text-align: center;
-  color: black;
+  color: white;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+  background: #4A2273;
 }
+
 
 #link-icon{
   position:absolute;
   margin-top: 30px;
-
+  margin-left: 20px;
   transform:rotateZ(20deg);
 }
 

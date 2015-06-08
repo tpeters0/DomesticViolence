@@ -25,6 +25,30 @@ $(document).ready(function(){
       $('#explosive').fadeIn(50);
     });
 
+    $('#honeymoon').click (function(){
+      location.href = "/stages/1"
+      });
+
+    $('#hm-text').click (function(){
+      location.href = "/stages/1"
+    });
+
+    $('#tension-text').click (function(){
+      location.href = "/stages/2"
+    });
+
+    $('#tension').click (function(){
+      location.href = "/stages/2"
+    });
+
+    $('.explosive-text').click (function(){
+      location.href = "/stages/3"
+    });
+
+    $('#explosive').click (function(){
+      location.href = "/stages/3"
+    });
+
 
     var rotation = 0;
 
