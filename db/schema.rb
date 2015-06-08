@@ -32,19 +32,14 @@ ActiveRecord::Schema.define(version: 20150602155432) do
     t.text "name"
   end
 
-  create_table "cycles", force: :cascade do |t|
-    t.text "name"
-  end
-
   create_table "roles", force: :cascade do |t|
     t.text "name"
     t.text "description"
   end
 
   create_table "stages", force: :cascade do |t|
-    t.text    "name"
-    t.text    "description"
-    t.integer "cycle_id"
+    t.text "name"
+    t.text "description"
   end
 
   create_table "users", force: :cascade do |t|

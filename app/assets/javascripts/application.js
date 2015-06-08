@@ -13,7 +13,6 @@
 //= jquery-2.1.4.min
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require paper-full.min.js
+
 //= require interact.min
 //= require_tree .

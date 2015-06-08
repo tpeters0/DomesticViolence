@@ -15,6 +15,7 @@
  */
 #ribbon{
   float:right;
+  margin-right: 100px;
 }
 
 
@@ -115,27 +116,4 @@ li{
   stroke-width:	3;
   stroke-miterlimit:	10;
   fill:	none;
-}
-
-#canvas-container {
-   width: 100%;
-   text-align:center;
-}
-
-#drawing1 {
-   margin: auto;
-   width: 500px;
-   height: 500px;
-   border:1px solid black;
-   background: white;
-   overflow:hidden;
-}
-
-#bfly {
-   margin: auto;
-   max-width: 100%;
-}
-
-.text-link{
-  margin-left:200px;
 }

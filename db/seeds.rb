@@ -1,5 +1,4 @@
 
-Cycle.destroy_all
 Butterfly.destroy_all
 Stage.destroy_all
 Role.destroy_all
@@ -9,21 +8,16 @@ User.destroy_all
 
 
 
-Cycle.create!(name: "Cycle of Abuse")
-
 stages = [
   {
-    cycle:        Cycle.find_by(name: "Cycle of Abuse"),
     name:        "Honeymoon Stage",
     description: "This is a loving, non-violent time, often where the abuser tries to compensate for previous mistreatment of the other.  Unless there is intervention where the abuser seriously commits to counseling to discover underlying issues and learn to manage his stress, the dangerous tension will begin to build again."
   },
   {
-    cycle:        Cycle.find_by(name: "Cycle of Abuse"),
     name:        "Tension-Building Stage",
     description: "The demands on and stresses of the relationship increase.  This is the longest stage, which can last from days to years.  Like the explosive stage, it does not occur until after the people involved have become extremely close for some time.  Over time, the abuser becomes more stressed and more controlling of the victim."
   },
   {
-    cycle:        Cycle.find_by(name: "Cycle of Abuse"),
     name:        "Explosive Stage",
     description: "Seeking a release from the build-up of stress and tension, the abuser instigates an incident, striking out against the victim -  verbally, emotionally, or physically. This is the shortest stage, but often increases in severity each time through the cycle."
   },
