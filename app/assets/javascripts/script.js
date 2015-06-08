@@ -69,25 +69,40 @@ $(document).ready(function(){
 
 
 
-    function allowDrop(ev) {
-        ev.preventDefault();
-    }
-
-    function drag(ev) {
-        ev.dataTransfer.setData("text", ev.target.id);
-    }
-
-    function drop(ev) {
-        ev.preventDefault();
-        var data = ev.dataTransfer.getData("text");
-        ev.target.appendChild(document.getElementById(data));
-    }
-
-
+    // function allowDrop(ev) {
+    //     ev.preventDefault();
+    // }
+    //
+    // function drag(ev) {
+    //     ev.dataTransfer.setData("text", ev.target.id);
+    // }
+    //
+    // function drop(ev) {
+    //     ev.preventDefault();
+    //     var data = ev.dataTransfer.getData("text");
+    //     ev.target.appendChild(document.getElementById(data));
+    // }
 
 
+// This works, but breaks the wheel js
+    // var form = document.getElementById('form');
+    // var input1 = document.querySelector('#color-field');
+    // var bflybkrd = document.querySelector('#bfly');
+    //
+    // form.addEventListener('submit', function(event){
+    //   event.preventDefault();
+    //   bflybkrd.style.backgroundColor = input1.value;
+    // });
 
-
+    // var form2 = document.getElementById('form2');
+    // var input2 = document.querySelector('#color-field');
+    // // var bfly = document.querySelector('#bfly');
+    // var color = style0.fill
+    //
+    // form2.addEventListener('submit', function(event){
+    //   event.preventDefault();
+    //   color = input2.value;
+    // });
 
 
 
