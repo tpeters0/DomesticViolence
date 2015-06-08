@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+#ribbon{
+  float:right;
+}
+
 
 body{
   background-color: #cccccc;
@@ -132,9 +136,6 @@ li{
    max-width: 100%;
 }
 
-.brush {
-  width: 100px;
-  height: 100px;
-  background: #1B4370;
-  margin: 15px auto;
+.text-link{
+  margin-left:200px;
 }

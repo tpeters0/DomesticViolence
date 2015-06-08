@@ -67,23 +67,6 @@ $(document).ready(function(){
     });
 
 
-
-
-    // function allowDrop(ev) {
-    //     ev.preventDefault();
-    // }
-    //
-    // function drag(ev) {
-    //     ev.dataTransfer.setData("text", ev.target.id);
-    // }
-    //
-    // function drop(ev) {
-    //     ev.preventDefault();
-    //     var data = ev.dataTransfer.getData("text");
-    //     ev.target.appendChild(document.getElementById(data));
-    // }
-
-
 // This works, but breaks the wheel js
     // var form = document.getElementById('form');
     // var input1 = document.querySelector('#color-field');
@@ -103,10 +86,6 @@ $(document).ready(function(){
     //   event.preventDefault();
     //   color = input2.value;
     // });
-
-
-
-
 
 
 
@@ -152,75 +131,48 @@ $(document).ready(function(){
       target.setAttribute('data-x', x);
       target.setAttribute('data-y', y);
 
-      console.log(target);
     }
 
-    // this is used later in the resizing demo
-    window.dragMoveListener = dragMoveListener;
+//
+//     interact('.dropzone').dropzone({
+//   // only accept elements matching this CSS selector
+//   // accept: '#yes-drop',
+//   // Require a 75% element overlap for a drop to be possible
+//   overlap: 0.75,
+//
+//   // listen for drop related events:
+//
+//   ondropactivate: function (event) {
+//     // add active dropzone feedback
+//     event.target.classList.add('drop-active');
+//   },
+//   ondragenter: function (event) {
+//     var draggableElement = event.relatedTarget,
+//         dropzoneElement = event.target;
+//
+//     // feedback the possibility of a drop
+//     dropzoneElement.classList.add('drop-target');
+//     draggableElement.classList.add('can-drop');
+//     draggableElement.textContent = 'Dragged in';
+//   },
+//   ondragleave: function (event) {
+//     // remove the drop feedback style
+//     event.target.classList.remove('drop-target');
+//     event.relatedTarget.classList.remove('can-drop');
+//     event.relatedTarget.textContent = 'Dragged out';
+//   },
+//   ondrop: function (event) {
+//     event.relatedTarget.textContent = 'Dropped';
+//   },
+//   ondropdeactivate: function (event) {
+//     // remove active dropzone feedback
+//     event.target.classList.remove('drop-active');
+//     event.target.classList.remove('drop-target');
+//   }
+// });
+//
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    // function draw_1() {
-    //   var canvas1 = document.getElementById("drawing1");
-    //   var context = canvas1.getContext("2d");
-    //
-    //   // Create the yellow face
-    //   context.strokeStyle = "#000000";
-    //   context.fillStyle = "#FFFF00";
-    //   context.beginPath();
-    //   context.arc(100,100,20,0,Math.PI*2,true);
-    //   context.closePath();
-    //   context.stroke();
-    //   context.fill();
-
-
-
-      // canvas1.mousedown(function(e){
-      //   var mouseX = e.pageX - this.offsetLeft;
-      //   var mouseY = e.pageY - this.offsetTop;
-      //
-      //   paint = true;
-      //   addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop);
-      //   console.log("downed!")
-      //   redraw();
-      // });
-      //
-
-
-      // context.strokeStyle = "black";
-      // context.stroke();
-      //
-      // context.beginPath();
-      // context.moveTo(0, 40);
-      // context.lineTo(240, 40);
-      // context.moveTo(260, 40);
-      // context.lineTo(500, 40);
-      // context.moveTo(495, 35);
-      // context.lineTo(500, 40);
-      // context.lineTo(495, 45);
-
-
-
-      // context.fillRect(50, 25, 30, 15);
-    // }
-    //
-    // $("#click").click(function(){
-    //   location.href = "#";
-    //   draw_1();
-    //   return false;
-    //
-    // })
 
 
 });
