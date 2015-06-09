@@ -67,20 +67,19 @@ $(document).ready(function(){
     });
 
 
-// This works, but breaks the wheel js
-    // var form = document.getElementById('form');
-    // var input1 = document.querySelector('#color-field');
-    // var bflybkrd = document.querySelector('#bfly');
-    //
-    // form.addEventListener('submit', function(event){
-    //   event.preventDefault();
-    //   bflybkrd.style.backgroundColor = input1.value;
-    // });
+    var form1 = $('#form1');
+    var input1 = document.querySelector('#color-field');
+    var bflybkrd = document.querySelector('#bfly');
+
+    form1.on('submit', function(event){
+      event.preventDefault();
+      bflybkrd.style.backgroundColor = input1.value;
+    });
 
     // var form2 = document.getElementById('form2');
     // var input2 = document.querySelector('#color-field');
-    // // var bfly = document.querySelector('#bfly');
-    // var color = style0.fill
+    // var bfly = document.querySelector('#bfly');
+    //
     //
     // form2.addEventListener('submit', function(event){
     //   event.preventDefault();
