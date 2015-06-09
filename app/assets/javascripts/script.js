@@ -26,27 +26,27 @@ $(document).ready(function(){
     });
 
     $('#honeymoon').click (function(){
-      location.href = "/stages/1"
+      location.href = "/stages/honeymoon"
       });
 
     $('#hm-text').click (function(){
-      location.href = "/stages/1"
+      location.href = "/stages/honeymoon"
     });
 
     $('#tension-text').click (function(){
-      location.href = "/stages/2"
+      location.href = "/stages/tension-building"
     });
 
     $('#tension').click (function(){
-      location.href = "/stages/2"
+      location.href = "/stages/tension-building"
     });
 
     $('.explosive-text').click (function(){
-      location.href = "/stages/3"
+      location.href = "/stages/explosive"
     });
 
     $('#explosive').click (function(){
-      location.href = "/stages/3"
+      location.href = "/stages/explosive"
     });
 
 

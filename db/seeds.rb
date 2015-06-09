@@ -10,15 +10,15 @@ User.destroy_all
 
 stages = [
   {
-    name:        "Honeymoon Stage",
+    name:        "honeymoon",
     description: "This is a loving, non-violent time, often where the abuser tries to compensate for previous mistreatment of the other.  Unless there is intervention where the abuser seriously commits to counseling to discover underlying issues and learn to manage his stress, the dangerous tension will begin to build again."
   },
   {
-    name:        "Tension-Building Stage",
+    name:        "tension-building",
     description: "The demands on and stresses of the relationship increase.  This is the longest stage, which can last from days to years.  Like the explosive stage, it does not occur until after the people involved have become extremely close for some time.  Over time, the abuser becomes more stressed and more controlling of the victim."
   },
   {
-    name:        "Explosive Stage",
+    name:        "explosive",
     description: "Seeking a release from the build-up of stress and tension, the abuser instigates an incident, striking out against the victim -  verbally, emotionally, or physically. This is the shortest stage, but often increases in severity each time through the cycle."
   },
 
