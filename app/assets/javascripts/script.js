@@ -67,6 +67,16 @@ $(document).ready(function(){
     });
 
 
+    $(".card").flip({
+      axis: 'x',
+      trigger: 'hover',
+      speed: 400,
+    });
+
+
+
+
+
     var form1 = $('#form1');
     var input1 = document.querySelector('#color-field');
     var bflybkrd = document.querySelector('#bfly');

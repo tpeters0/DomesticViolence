@@ -1,3 +1,27 @@
 <h1><%= @stage.name.capitalize %> Stage </h1>
 
 <p><%= @stage.description %></p>
+
+
+<ul>
+  <% @stage.attitudes.each do |attitude| %>
+    <li>The <%= attitude.role.name %> feels <%= attitude.description %></li>
+  <% end %>
+</ul>
+
+<ul>
+  <% @stage.behaviors.each do |behavior| %>
+    <li>The <%= behavior.role.name %> <%= behavior.description %></li>
+  <% end %>
+</ul>
+
+<div id="1_card" class="card">
+<div >
+  <div class="front">
+    Front content
+  </div>
+  <div class="back">
+    Back content
+  </div>
+</div>
+</div>

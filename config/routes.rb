@@ -8,10 +8,6 @@ Rails.application.routes.draw do
   resources :attitudes
   resources :butterflies
 
-  # get '/stages/.:name' => 'stages#show',
-  # as: :stage
-  # get '/stages' => 'stages#index'
-
   resources :stages, param: :name
 
 
