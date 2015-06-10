@@ -48,102 +48,108 @@ behaviors = [
   {
     role:        Role.find_by(name: "Abuser"),
     stage:       Stage.find_by(name: "honeymoon"),
-    description: "Promises to change and not repeat the abuse"
+    description: "promises to change and not repeat the abuse"
   },
   {
     role:        Role.find_by(name: "Abuser"),
     stage:       Stage.find_by(name: "honeymoon"),
-    description: "Offers gifts and pays special attention to the other person"
+    description: "offers gifts and pays special attention to the other person"
   },
 
   {
     role:        Role.find_by(name: "Abuser"),
     stage:       Stage.find_by(name: "honeymoon"),
-    description: "Begs for forgiveness"
+    description: "begs for forgiveness"
   },
 
   {
     role:        Role.find_by(name: "Victim"),
     stage:       Stage.find_by(name: "honeymoon"),
-    description: "Warily accepts apologies and offers forgiveness"
+    description: "warily accepts apologies and offers forgiveness"
   },
 
   {
     role:        Role.find_by(name: "Victim"),
     stage:       Stage.find_by(name: "honeymoon"),
-    description: "Does activities that are enjoyable with the other person"
-  },
-
-  {
-    role:        Role.find_by(name: "Abuser"),
-    stage:       Stage.find_by(name: "tension-building"),
-    description: "Increases aggressive behavior towards objects"
-  },
-
-  {
-    role:        Role.find_by(name: "Abuser"),
-    stage:       Stage.find_by(name: "tension-building"),
-    description: "Increases verbal abuse towards the victim"
+    description: "does activities that are enjoyable with the other person"
   },
 
   {
     role:        Role.find_by(name: "Victim"),
     stage:       Stage.find_by(name: "tension-building"),
-    description: "Alters behavior to avoid triggering aggression"
+    description: "alters behavior to avoid triggering the abuser's aggression"
+  },
+
+  {
+    role:        Role.find_by(name: "Victim"),
+    stage:       Stage.find_by(name: "tension-building"),
+    description: "often submits to the increasing demands of the abuser"
   },
 
   {
     role:        Role.find_by(name: "Abuser"),
     stage:       Stage.find_by(name: "explosive"),
-    description: "May use alcohol in excess and use that as an excuse for violence"
+    description: "severely attacks the victim - physically, verbally, and/ or sexually"
+  },
+
+  {
+    role:        Role.find_by(name: "Abuser"),
+    stage:       Stage.find_by(name: "explosive"),
+    description: "will continue attack until the pent-up stress is 'released.'"
+  },
+
+  {
+    role:        Role.find_by(name: "Abuser"),
+    stage:       Stage.find_by(name: "explosive"),
+    description: "may use alcohol in excess and use that as an excuse for violence"
+  },
+
+  {
+    role:        Role.find_by(name: "Abuser"),
+    stage:       Stage.find_by(name: "explosive"),
+    description: "behaves calmly immediately after the attack, once pent-up tension is gone - and often by the time authorities arrive"
   },
 
   {
     role:        Role.find_by(name: "Victim"),
     stage:       Stage.find_by(name:"explosive"),
-    description: "May stimulate confrontation to get the 'event' over with"
+    description: "may stimulate confrontation to get the 'event' over with"
   },
 
   {
     role:        Role.find_by(name: "Victim"),
     stage:       Stage.find_by(name:"explosive"),
-    description: "Often deny or minimize the seriousness of the injuries to the abuser to soothe them or avoid further abuse"
+    description: "often denies or minimizes the seriousness of the injuries to the abuser to soothe them or avoid further abuse"
   },
 
   {
     role:        Role.find_by(name: "Victim"),
     stage:       Stage.find_by(name:"explosive"),
-    description: "Must wait it out or try to escape.  Fighting back or retaliating will simply increase the abuser's will to attack more aggressively."
+    description: "must wait the incident out or try to escape.  Retaliating will simply increase the abuser's will to attack more aggressively."
   },
 
   {
     role:        Role.find_by(name: "Abuser"),
     stage:       Stage.find_by(name:"tension-building"),
-    description: "Denies his or her own insecurities or frustrations"
+    description: "denies his or her own insecurities or frustrations"
   },
 
   {
     role:        Role.find_by(name: "Abuser"),
     stage:       Stage.find_by(name:"tension-building"),
-    description: "Blames victim or other for making him or her miserable"
+    description: "blames victim or other for making him or her miserable"
   },
 
   {
     role:        Role.find_by(name: "Abuser"),
     stage:       Stage.find_by(name:"tension-building"),
-    description: "Becomes increasingly aggressive towards objects and verbally abusive towards the victim"
+    description: "becomes increasingly aggressive towards objects and verbally abusive towards the victim"
   },
 
   {
     role:        Role.find_by(name: "Abuser"),
     stage:       Stage.find_by(name:"tension-building"),
-    description: "Becomes increasingly demanding of control over the victim's life, including dictating who he or she may spend time with or how he or she may dress"
-  },
-
-  {
-    role:        Role.find_by(name: "Abuser"),
-    stage:       Stage.find_by(name:"tension-building"),
-    description: "Alters behavior to avoid triggering the abuser's aggression"
+    description: "becomes increasingly demanding of control over the victim's life, including dictating who he or she may spend time with or how he or she may dress"
   },
 
 ]
@@ -178,12 +184,12 @@ attitudes = [
     description: "the desire to control or punish the victim"
   },
 
-  {
-    role:        Role.find_by(name: "Abuser"),
-    stage:       Stage.find_by(name:"explosive"),
-    description: "calm, immediately after the event, because the pent-up stress has been eliminated.
-                  Abusers often appear peaceful by the time law enforcement might arrive."
-  },
+  # {
+  #   role:        Role.find_by(name: "Abuser"),
+  #   stage:       Stage.find_by(name:"explosive"),
+  #   description: "calm, immediately after the event, because the pent-up stress has been eliminated.
+  #                 Abusers often appear peaceful by the time law enforcement might arrive."
+  # },
 
   {
     role:        Role.find_by(name: "Victim"),
@@ -210,15 +216,9 @@ attitudes = [
   },
 
   {
-    role:        Role.find_by(name: "Victim"),
-    stage:       Stage.find_by(name:"explosive"),
-    description: "the desire to get the pain over with"
-  },
-
-  {
     role:        Role.find_by(name: "Abuser"),
     stage:       Stage.find_by(name:"tension-building"),
-    description: "powerless in own home"
+    description: "powerless, in some sense - wanting to feel control over something or someone"
   },
 
   {
@@ -278,13 +278,13 @@ attitudes = [
   {
     role:        Role.find_by(name: "Victim"),
     stage:       Stage.find_by(name:"honeymoon"),
-    description: "the desire to escape the abuse, but hopeful that things will be better"
+    description: "the desire to escape the abuse, yet hopeful that things will be better"
   },
 
   {
     role:        Role.find_by(name: "Victim"),
     stage:       Stage.find_by(name:"honeymoon"),
-    description: "depressed and still trapped, possibly"
+    description: "depressed, possibly, and still feeling trapped"
   },
 
 

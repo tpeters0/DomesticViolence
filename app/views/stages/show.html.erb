@@ -2,26 +2,63 @@
 
 <p><%= @stage.description %></p>
 
-
-<ul>
-  <% @stage.attitudes.each do |attitude| %>
-    <li>The <%= attitude.role.name %> feels <%= attitude.description %></li>
+<container id="set-of-cards">
+<div class="card-grid">
+  <% @stage.attitudes.where(role: Role.find_by(name: "Abuser")).each do |attitude| %>
+    <div class="card">
+      <div class="front">
+        <div id= small-stage> <%= @stage.name.capitalize %> Stage </div>
+        <div id= big-tude><%= attitude.role.name %> feels ... </div>
+      </div>
+      <div class="back">
+        ... <%= attitude.description %>
+      </div>
+    </div>
   <% end %>
-</ul>
+</div>
 
-<ul>
-  <% @stage.behaviors.each do |behavior| %>
-    <li>The <%= behavior.role.name %> <%= behavior.description %></li>
+<div class="card-grid">
+  <% @stage.behaviors.where(role: Role.find_by(name: "Abuser")).each do |behavior| %>
+    <div class="card" id="behavior">
+      <div class="front">
+        <div id= small-stage> <%= @stage.name.capitalize %> Stage </div>
+        <div id= big-tude><%= behavior.role.name %> ... </div>
+      </div>
+      <div class="back">
+        ... <%= behavior.description %>
+      </div>
+    </div>
   <% end %>
-</ul>
+</div>
 
-<div id="1_card" class="card">
-<div >
-  <div class="front">
-    Front content
-  </div>
-  <div class="back">
-    Back content
-  </div>
+
+<div class="card-grid">
+  <% @stage.attitudes.where(role: Role.find_by(name: "Victim")).each do |attitude| %>
+    <div class="card">
+      <div class="front">
+        <div id= small-stage> <%= @stage.name.capitalize %> Stage </div>
+        <div id= big-tude><%= attitude.role.name %> feels ... </div>
+      </div>
+      <div class="back">
+        ... <%= attitude.description %>
+      </div>
+    </div>
+  <% end %>
 </div>
+
+
+<div class="card-grid">
+  <% @stage.behaviors.where(role: Role.find_by(name: "Victim")).each do |behavior| %>
+    <div class="card" id="behavior">
+      <div class="front">
+        <div id= small-stage> <%= @stage.name.capitalize %> Stage </div>
+        <div id= big-tude><%= behavior.role.name %> ... </div>
+      </div>
+      <div class="back">
+        ... <%= behavior.description %>
+      </div>
+    </div>
+  <% end %>
 </div>
+
+</container>
