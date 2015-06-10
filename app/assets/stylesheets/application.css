@@ -16,12 +16,16 @@
 #ribbon{
   float:right;
   margin-right: 100px;
+  position:relative;
 }
 
+#wheel-link{
+margin-left: 5%;
+margin-top: 10px;
+}
 
 body{
   background-color: #cccccc;
-  min-height: 700px;
   margin:3px;
   padding:3px;
 }
