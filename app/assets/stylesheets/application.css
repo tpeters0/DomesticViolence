@@ -14,9 +14,10 @@
  *= require_self
  */
 #ribbon{
-  float:right;
-  margin-right: 100px;
-  position:relative;
+  margin-right: 20px;
+  top: 0;
+  right: 0;
+  position:absolute;
 }
 
 #wheel-link{
@@ -52,14 +53,22 @@ li{
   list-style-type: none;
 }
 
+html,body{
+  position:relative;
+  width:100%;
+}
+html{
+  height:100%;
+}
+body{
+  min-height:100%;
+}
 #footer{
   text-align: center;
   color: black;
-  float:bottom;
   position:absolute;
-  margin-left: 35%;
-  margin-right: 35%;
-
+  bottom: 0;
+  width: 100%;
 }
 
 
@@ -193,3 +202,13 @@ li{
   font-size: 2em;
   padding: 10px;
 }
+
+/*#flutterbies li
+{
+  display:inline-block;
+  width:200px;
+  height:200px;
+  background-image:url('http://www.seethelightshine.com/blog/wp-content/uploads/2013/07/Butterfly_Zffoto-Fotolia.jpg');
+  background-position:center center;
+  background-size:contain;
+}*/

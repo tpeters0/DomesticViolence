@@ -24,5 +24,5 @@ class ButterfliesController < ApplicationController
       params.require(:butterfly).permit(:name)
     end
   end
-  
+
 end
