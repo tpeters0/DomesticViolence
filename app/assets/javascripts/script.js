@@ -80,8 +80,8 @@ $(document).ready(function(){
     });
 
 
-    // The following is my tailoring of HTML5 canvas-drawing code by William Malone (www.williammalone.com)
-    // Licensed under the Apache License, Version 2.0; http://www.apache.org/licenses/LICENSE-2.0
+// The following Drawing Script is my tailoring of HTML5 canvas-drawing code by William Malone (www.williammalone.com)
+// Licensed under the Apache License, Version 2.0; http://www.apache.org/licenses/LICENSE-2.0
 
 
     /**
@@ -138,10 +138,6 @@ $(document).ready(function(){
     			redraw();
     		}
     	}
-
-
-
-
 
       var canvas = document.getElementById("canvas");
       var context = canvas.getContext("2d");
@@ -218,10 +214,8 @@ $(document).ready(function(){
     		clearCanvas();
     	});
 
-
-
     });
-
+//end of Drawing Script
 
 
 });
