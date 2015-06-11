@@ -1,8 +1,12 @@
-<h1><%= @butterfly.title %></h1>
+
+<li><%= link_to "Butterfly Gallery", butterflies_path %></li>
+
+<h1> Butterfly </h1>
+<h2><%= @butterfly.title %></h2>
 
 
 <div class="butterfly_image">
-	<%= @butterfly.pic %>
+	<%= image_tag @butterfly.image_url.to_s %>
 </div>
 
 

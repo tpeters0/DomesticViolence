@@ -4,7 +4,7 @@
   <% @butterflies.each do |butterfly| %>
 
   <li><%= link_to butterfly.title, butterfly_path(butterfly) %></li>
-
+  <%= image_tag butterfly.image_url(:thumb).to_s %>
   <% end %>
 </ul>
 

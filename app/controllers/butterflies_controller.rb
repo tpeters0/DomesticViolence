@@ -40,7 +40,7 @@ class ButterfliesController < ApplicationController
   private
 
   def butterfly_params
-    params.require(:butterfly).permit(:title, :pic)
+    params.require(:butterfly).permit(:title, :image, :remote_image_url)
   end
 
 
