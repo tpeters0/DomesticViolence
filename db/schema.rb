@@ -28,11 +28,6 @@ ActiveRecord::Schema.define(version: 20150602155432) do
     t.text    "description"
   end
 
-  create_table "butterflies", force: :cascade do |t|
-    t.text "name"
-    t.text "backgroundColor"
-  end
-
   create_table "roles", force: :cascade do |t|
     t.text "name"
     t.text "description"
