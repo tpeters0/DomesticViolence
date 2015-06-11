@@ -13,10 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+
 #ribbon{
   margin-right: 20px;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 5px;
   position:absolute;
 }
 
@@ -33,6 +37,7 @@ body{
 
 h1{
   text-align:center;
+  vertical-align: middle;
   font-size: 3em;
   color:#4A2273;
 }
@@ -66,11 +71,14 @@ body{
 #footer{
   text-align: center;
   color: black;
-  position:absolute;
+  position:relative;
   bottom: 0;
   width: 100%;
 }
 
+.text-link{
+  padding:20px;
+}
 
 #link-icon{
   position:absolute;
@@ -136,12 +144,16 @@ body{
 
 #set-of-cards{
   display: inline-block;
+  text-align:center;
+  width: 100%;
 }
 
 .card-grid {
   margin: 10px;
   display: inline-block;
   vertical-align: top;
+  text-align: center;
+
 }
 
 .card {
@@ -203,12 +215,6 @@ body{
   padding: 10px;
 }
 
-/*#flutterbies li
-{
-  display:inline-block;
-  width:200px;
-  height:200px;
-  background-image:url('http://www.seethelightshine.com/blog/wp-content/uploads/2013/07/Butterfly_Zffoto-Fotolia.jpg');
-  background-position:center center;
-  background-size:contain;
-}*/
+.blank{
+  height: 20px;
+}

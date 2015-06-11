@@ -1,10 +1,19 @@
 
-<div id="link-icon">
-  <%= link_to butterflies_path(@butterflies) do %>
-  <%= image_tag ('butterfly-sm.png') %>
-  <% end %>
-</div>
 
+<div id="header">
+
+  <div id="link-icon">
+    <%= link_to butterflies_path(@butterflies) do %>
+    <%= image_tag ('butterfly-sm.png') %>
+    <% end %>
+  </div>
+
+  <div id="ribbon">
+    <%= link_to root_path do %>
+    <%= image_tag ('ribbon-xsm.png') %>
+    <% end %>
+  </div>
+</div>
 
 <div class="cycle-view">
 <h1 id="wheel-title">Cycle of Abuse</h1>

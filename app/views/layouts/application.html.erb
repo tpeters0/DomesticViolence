@@ -11,18 +11,15 @@
 
   <body>
     <div id="wrapper">
-	  	<div id="header">
-        <div id="ribbon">
-          <%= link_to root_path do %>
-          <%= image_tag ('ribbon-xsm.png') %>
-          <% end %>
-        </div>
-      </div>
+
 		  <div id="content">
          <%= yield %>
 
       </div>
+
 		  <div id="footer">
+      <div class="blank"> </div>
+
         <p>Domestic Abuse Awareness, © 2015 </p>
       </div>
 	  </div>

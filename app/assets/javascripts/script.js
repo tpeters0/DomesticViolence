@@ -66,6 +66,12 @@ $(document).ready(function(){
         $('#notitle').rotate(rotation);
     });
 
+    $('#rotate').click(function() {
+        rotation -= 120;
+        duration:1000;
+        $('#notitle').rotate(rotation);
+    });
+
 
     $(".card").flip({
       axis: 'x',
