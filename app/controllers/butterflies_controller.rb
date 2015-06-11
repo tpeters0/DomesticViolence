@@ -18,20 +18,28 @@ class ButterfliesController < ApplicationController
       else
         render 'new'
       end
+  end
 
 
+  def edit
+    @butterfly = Butterfly.find(params[:id])
+  end
 
-      File.open("#{Rails.root}/public/uploads/somefilename.png", 'wb') do |f|
-         f.write(params[:image].read)
-       end
+  def update
+    @butterfly = Butterfly.find(params[:id])
+    @butterfly.update(profile_params)
+    redirect_to(@butterfly)
+  end
 
-
+  def destroy
+    @butterfly = Butterfly.find(params[:id])
+    @butterfly.destroy
+    redirect_to(butterflies_path)
+  end
 
 
   private
     def butterfly_params
-      params.require(:butterfly).permit(:name)
+      params.require(:butterfly).permit(:name, :image)
     end
   end
-
-end
