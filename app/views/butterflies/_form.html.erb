@@ -1,0 +1,21 @@
+<%= form_for @butterfly do |f| %>
+
+  <div>
+   <%= f.label                :title, "Title" %>
+   <%= f.text_field           :title %>
+  </div>
+
+  <div>
+   <%= f.label                :pic, "Image" %>
+   <%= f.text_field           :pic %>
+  </div>
+
+  <div>
+    <%= f.hidden_field        :user_id %>
+  </div>
+
+  <div>
+   <%= f.submit %>
+  </div>
+
+<% end %>

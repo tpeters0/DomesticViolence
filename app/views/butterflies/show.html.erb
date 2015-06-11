@@ -1,0 +1,12 @@
+<h1><%= @butterfly.title %></h1>
+
+
+<div class="butterfly_image">
+	<%= @butterfly.pic %>
+</div>
+
+
+<div class="butterfly_actions">
+	<a href="/butterflies/<%= @butterfly.id %>/edit">Edit</a>
+	<%= button_to("Delete", butterfly_path(@butterfly), :method => :delete) %>
+</div>

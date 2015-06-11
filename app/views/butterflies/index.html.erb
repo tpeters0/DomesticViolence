@@ -1,0 +1,12 @@
+<h1>Butterflies</h1>
+
+<ul>
+  <% @butterflies.each do |butterfly| %>
+
+  <li><%= link_to butterfly.title, butterfly_path(butterfly) %></li>
+
+  <% end %>
+</ul>
+
+
+<li><%= link_to "Create butterfly", new_butterfly_path %></li>
