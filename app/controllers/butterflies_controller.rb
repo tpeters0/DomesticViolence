@@ -19,6 +19,15 @@ class ButterfliesController < ApplicationController
         render 'new'
       end
 
+
+
+      File.open("#{Rails.root}/public/uploads/somefilename.png", 'wb') do |f|
+         f.write(params[:image].read)
+       end
+
+
+
+
   private
     def butterfly_params
       params.require(:butterfly).permit(:name)
