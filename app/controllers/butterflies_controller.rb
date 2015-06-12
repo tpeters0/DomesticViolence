@@ -14,6 +14,7 @@ class ButterfliesController < ApplicationController
 
   def create
     @butterfly = Butterfly.new(butterfly_params)
+
       if @butterfly.save
         redirect_to(butterfly_path(@butterfly))
       else
@@ -37,11 +38,16 @@ class ButterfliesController < ApplicationController
     redirect_to root_path
   end
 
+
+
+
+
+
   private
 
   def butterfly_params
     params.require(:butterfly).permit(:title, :image, :remote_image_url)
-  end
 
+  end
 
 end
