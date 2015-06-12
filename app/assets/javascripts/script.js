@@ -98,6 +98,8 @@ $(document).ready(function(){
     	var colorGreen = "#659b41";
     	var colorYellow = "#ffcf33";
     	var colorBrown = "#986928";
+      var colorRed = "red";
+      var colorBlack = "black";
     	var clickX = new Array();
     	var clickY = new Array();
     	var clickColor = new Array();
@@ -139,10 +141,6 @@ $(document).ready(function(){
     		}
     	}
 
-
-
-
-
       var canvas = document.getElementById("canvas");
       var context = canvas.getContext("2d");
       // console.log("canvas rendering context");
@@ -173,6 +171,26 @@ $(document).ready(function(){
     	  paint = false;
     	});
 
+      $('#choosePurple').mousedown(function(e){
+        curColor = colorPurple;
+      });
+      $('#chooseGreen').mousedown(function(e){
+        curColor = colorGreen;
+      });
+      $('#chooseYellow').mousedown(function(e){
+        curColor = colorYellow;
+      });
+      $('#chooseBrown').mousedown(function(e){
+      curColor = colorBrown;
+      });
+      $('#chooseRed').mousedown(function(e){
+        curColor = colorRed;
+      });
+      $('#chooseBlack').mousedown(function(e){
+        curColor = colorBlack;
+      });
+
+
     	function clearCanvas()
     	{
     		context.clearRect(0, 0, canvasWidth, canvasHeight);
@@ -188,12 +206,11 @@ $(document).ready(function(){
     	  clickX.push(x);
     	  clickY.push(y);
     	  clickDrag.push(dragging);
+        clickColor.push(curColor);
     	}
 
     	function redraw(){
         context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
-
-        context.strokeStyle = "#df4b26";
         context.lineJoin = "round";
         context.lineWidth = 5;
 
@@ -206,6 +223,7 @@ $(document).ready(function(){
           }
          context.lineTo(clickX[i], clickY[i]);
          context.closePath();
+         context.strokeStyle = clickColor[i];
          context.stroke();
         }
       }
