@@ -1,3 +1,4 @@
+
 <div class="text-link">
 <%= link_to "Butterfly Gallery", butterflies_path(@butterflies) %>
 </div>
@@ -10,6 +11,7 @@
 <canvas id="canvas" width="500" height="500"></canvas>
 
 <button id="clearCanvas" type="button">Clear</button>
+<button id="saveCanvas" type="button">Save</button>
 
 
 <%= render partial: "form" %>
@@ -20,3 +22,6 @@
 <li> Let abusers know that their behavior in unacceptable </li>
 <li> Let abusers know that they need to commit to getting real help to deal with their own tension in order to break the cycle.</li>
 <li> Let victims know that they are not to blame.  It is not a weakness to seek help.  It takes courage to leave. <li>
+
+
+<%= render partial: "form" %>

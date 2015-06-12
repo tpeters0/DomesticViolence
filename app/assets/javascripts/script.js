@@ -215,10 +215,57 @@ $(document).ready(function(){
     	});
 
     });
+
 //end of Drawing Script
 
 //saving canvas
 
+    //
+    $('#saveCanvas').mousedown(function(e)
+    {
+      // var url = canvas.toDataURL('image/png');
+      // $('#canvas').val(url);
+      // console.log(url);
+      // // return url;
 
+      var dataURL =  canvas.toDataURL('image/png');
+      $('#canvas').val(dataURL);
+      console.log(dataURL);
+    //
+    //
+    //
+    //   // Convert dataURL to Blob object
+    //   function dataURLtoBlob(dataURL) {
+    //     // Decode the dataURL
+    //     var binary = atob(dataURL.split(',')[1]);
+    //     // Create 8-bit unsigned array
+    //     var array = [];
+    //     for(var i = 0; i < binary.length; i++) {
+    //         array.push(binary.charCodeAt(i));
+    //     }
+    //     // Return our Blob object
+    //     return new Blob([new Uint8Array(array)], {type: 'image/png'});
+    //   }
+    //   // Get our file
+    //   var file= dataURLtoBlob(dataURL);
+    //   // Create new form data
+    //   var fd = new FormData();
+    //   // Append our Canvas image file to the form data
+    //   fd.append("image", file);
+    //   // And send it
+    //
+    //   $.ajax({
+    //      url: "/butterflies/new",
+    //      type: "POST",
+    //      data: fd,
+    //      processData: false,
+    //      contentType: false,
+    //   });
+    //
+
+
+
+
+    });
 
 });

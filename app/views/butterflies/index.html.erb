@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div id="header">
 
 </div><h1>Butterflies</h1>
@@ -35,5 +36,17 @@
     </div>
 
   <% end %>
+=======
+<h1>Butterflies</h1>
 
+<ul>
+  <% @butterflies.each do |butterfly| %>
+>>>>>>> master
+
+  <li><%= link_to butterfly.title, butterfly_path(butterfly) %></li>
+  <%= image_tag butterfly.image_url(:thumb).to_s %>
+  <% end %>
 </ul>
+
+
+<li><%= link_to "Create butterfly", new_butterfly_path %></li>

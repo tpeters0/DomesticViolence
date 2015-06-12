@@ -1,4 +1,5 @@
 class ButterfliesController < ApplicationController
+
   def index
     @butterflies = Butterfly.all
   end
@@ -13,13 +14,13 @@ class ButterfliesController < ApplicationController
 
   def create
     @butterfly = Butterfly.new(butterfly_params)
+
       if @butterfly.save
-        redirect_to 'butterflies'
+        redirect_to(butterfly_path(@butterfly))
       else
-        render 'new'
+        render(:new)
       end
   end
-
 
   def edit
     @butterfly = Butterfly.find(params[:id])
@@ -27,9 +28,27 @@ class ButterfliesController < ApplicationController
 
   def update
     @butterfly = Butterfly.find(params[:id])
+    @butterfly.update(butterfly_params)
+    redirect_to(@butterfly)
+  end
+
+  def destroy
+    @butterfly = Butterfly.find(params[:id])
+    @butterfly.destroy
+    redirect_to root_path
+  end
+
+  def edit
+    @butterfly = Butterfly.find(params[:id])
+  end
+
+
+  def update
+    @butterfly = Butterfly.find(params[:id])
     @butterfly.update(profile_params)
     redirect_to(@butterfly)
   end
+
 
   def destroy
     @butterfly = Butterfly.find(params[:id])
@@ -39,7 +58,14 @@ class ButterfliesController < ApplicationController
 
 
   private
+
     def butterfly_params
       params.require(:butterfly).permit(:name, :image)
     end
+
+  #
+  # def butterfly_params
+  #   params.require(:butterfly).permit(:title, :image, :remote_image_url)
+
+
   end

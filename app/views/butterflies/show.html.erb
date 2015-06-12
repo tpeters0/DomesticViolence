@@ -1,17 +1,16 @@
-<div id="header">
 
-  <div id="wheel-link">
-    <%= link_to image_tag('wheel_text_logo.png'), stages_path %>
-  </div>
+<li><%= link_to "Butterfly Gallery", butterflies_path %></li>
 
-  <h1>Domestic Abuse</h1>
+<h1> Butterfly </h1>
+<h2><%= @butterfly.title %></h2>
 
-  <div id="ribbon">
-    <%= link_to root_path do %>
-    <%= image_tag ('ribbon-xsm.png') %>
-    <% end %>
-  </div>
+
+<div class="butterfly_image">
+	<%= image_tag @butterfly.image_url.to_s %>
 </div>
 
 
-<h1><%= @butterfly.name %></h1>
+<div class="butterfly_actions">
+	<a href="/butterflies/<%= @butterfly.id %>/edit">Edit</a>
+	<%= button_to("Delete", butterfly_path(@butterfly), :method => :delete) %>
+</div>
