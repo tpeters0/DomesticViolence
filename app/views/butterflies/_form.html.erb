@@ -3,25 +3,11 @@
   <p>
    <%= f.label                :title, "Name of Butterfly" %>
    <%= f.text_field           :title %>
- </p>
-
-
-
-
-if wanted to upload file -->
-  <p>
-   <%= f.file_field           :image %>
- </p>
-
-  <p>
-    <%= f.label      :remote_image_url %>
-    <%= f.text_field :remote_image_url %>
   </p>
 
-  <!-- <p>
-    <%= f.hidden_field        :image %>
-    <%= hidden_field_tag 'canvas', 'canvas' %>
-  </p> -->
+  <p>
+   <%= f.file_field           :image %>
+  </p>
 
   <p>
     <%= f.hidden_field        :user_id %>
@@ -29,6 +15,6 @@ if wanted to upload file -->
 
   <p>
    <%= f.submit %>
- </p>
+  </p>
 
 <% end %>
