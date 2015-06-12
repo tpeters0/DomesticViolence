@@ -1,7 +1,9 @@
 
-<li><%= link_to "Butterfly Gallery", butterflies_path %></li>
-
-<h1> Butterfly </h1>
+<div id="link-icon">
+  <%= link_to butterflies_path(@butterflies) do %>
+  <%= image_tag ('butterfly-sm.png') %>
+  <% end %>
+</div>
 <h2><%= @butterfly.title %></h2>
 
 
@@ -9,8 +11,7 @@
 	<%= image_tag @butterfly.image_url.to_s %>
 </div>
 
-
 <div class="butterfly_actions">
-	<a href="/butterflies/<%= @butterfly.id %>/edit">Edit</a>
+	<!-- <a href="/butterflies/<%= @butterfly.id %>/edit">Edit</a> -->
 	<%= button_to("Delete", butterfly_path(@butterfly), :method => :delete) %>
 </div>

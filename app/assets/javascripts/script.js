@@ -90,8 +90,9 @@ $(document).ready(function(){
     $( document ).ready(function() {
     	var canvas;
     	var context;
-    	var canvasWidth = 500;
+    	var canvasWidth = 600;
     	var canvasHeight = 500;
+      var outlineImage = new Image();
     	var padding = 25;
     	var lineWidth = 8;
     	var colorPurple = "#cb3594";
@@ -114,10 +115,10 @@ $(document).ready(function(){
     	var mediumStartY = 19;
     	var mediumImageWidth = 93;
     	var mediumImageHeight = 46;
-    	var drawingAreaX = 111;
-    	var drawingAreaY = 11;
-    	var drawingAreaWidth = 267;
-    	var drawingAreaHeight = 200;
+    	var drawingAreaX = 0;
+    	var drawingAreaY = 0;
+    	var drawingAreaWidth = 600;
+    	var drawingAreaHeight = 500;
     	var toolHotspotStartY = 23;
     	var toolHotspotHeight = 38;
     	var sizeHotspotStartY = 157;
@@ -127,7 +128,7 @@ $(document).ready(function(){
     	sizeHotspotWidthObject.large = 25;
     	sizeHotspotWidthObject.normal = 18;
     	sizeHotspotWidthObject.small = 16;
-    	var totalLoadResources = 8;
+    	var totalLoadResources = 1;
     	var curLoadResNum = 0;
 
 
@@ -143,7 +144,14 @@ $(document).ready(function(){
 
       var canvas = document.getElementById("canvas");
       var context = canvas.getContext("2d");
-      // console.log("canvas rendering context");
+
+
+      // Load images
+      outlineImage.onload = function() { resourceLoaded();
+    	};
+    	outlineImage.src = "/assets/butterfly-white.png";
+
+
 
     	$('#canvas').mousedown(function(e)
     	{
@@ -174,18 +182,23 @@ $(document).ready(function(){
       $('#choosePurple').mousedown(function(e){
         curColor = colorPurple;
       });
+
       $('#chooseGreen').mousedown(function(e){
         curColor = colorGreen;
       });
+
       $('#chooseYellow').mousedown(function(e){
         curColor = colorYellow;
       });
+
       $('#chooseBrown').mousedown(function(e){
       curColor = colorBrown;
       });
+
       $('#chooseRed').mousedown(function(e){
         curColor = colorRed;
       });
+
       $('#chooseBlack').mousedown(function(e){
         curColor = colorBlack;
       });
@@ -194,6 +207,7 @@ $(document).ready(function(){
     	function clearCanvas()
     	{
     		context.clearRect(0, 0, canvasWidth, canvasHeight);
+
     	}
 
     	var clickX = new Array();
@@ -213,6 +227,9 @@ $(document).ready(function(){
         context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
         context.lineJoin = "round";
         context.lineWidth = 5;
+
+        context.drawImage(outlineImage, drawingAreaX, drawingAreaY, drawingAreaWidth, drawingAreaHeight);
+
 
         for(var i=0; i < clickX.length; i++) {
           context.beginPath();
@@ -238,13 +255,11 @@ $(document).ready(function(){
 
     });
     //
-    $('#convertCanvas').mousedown(function(e)
-    {
-      var dataURL =  canvas.toDataURL('image/png');
-      $('#canvas').val(dataURL);
-      console.log(dataURL);
-
-
-    });
+    // $('#convertCanvas').mousedown(function(e)
+    // {
+    //   var dataURL =  canvas.toDataURL('image/png');
+    //   $('#canvas').val(dataURL);
+    //   console.log(dataURL);
+    // });
 
 });
