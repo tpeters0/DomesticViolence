@@ -254,12 +254,13 @@ $(document).ready(function(){
     	});
 
     });
-    //
-    // $('#convertCanvas').mousedown(function(e)
-    // {
-    //   var dataURL =  canvas.toDataURL('image/png');
-    //   $('#canvas').val(dataURL);
-    //   console.log(dataURL);
-    // });
+
+
+    $('#convertCanvas').mousedown(function(e)
+    {
+      var dataURL =  canvas.toDataURL('image/png');
+      $('#canvascontent').val(dataURL);
+      console.log(dataURL);
+    });
 
 });
