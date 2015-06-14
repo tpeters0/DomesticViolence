@@ -1,4 +1,5 @@
 class ButterfliesController < ApplicationController
+  before_action :verify_authenticity_token
 
   def index
     @butterflies = Butterfly.all
@@ -41,7 +42,7 @@ class ButterfliesController < ApplicationController
   private
 
   def butterfly_params
-    params.require(:butterfly).permit(:title, :image, :remote_image_url)
+    params.require(:butterfly).permit(:title, :image)
 
   end
 

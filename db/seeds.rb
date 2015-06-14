@@ -184,13 +184,6 @@ attitudes = [
     description: "the desire to control or punish the victim"
   },
 
-  # {
-  #   role:        Role.find_by(name: "Abuser"),
-  #   stage:       Stage.find_by(name:"Explosive"),
-  #   description: "calm, immediately after the event, because the pent-up stress has been eliminated.
-  #                 Abusers often appear peaceful by the time law enforcement might arrive."
-  # },
-
   {
     role:        Role.find_by(name: "Victim"),
     stage:       Stage.find_by(name:"Explosive"),
