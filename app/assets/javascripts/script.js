@@ -149,7 +149,7 @@ $(document).ready(function(){
       // Load images
       outlineImage.onload = function() { resourceLoaded();
     	};
-    	outlineImage.src = "/assets/butterfly-white.png";
+    	outlineImage.src = "/assets/images/butterfly-white.png";
 
 
 
