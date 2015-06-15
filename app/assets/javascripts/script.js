@@ -68,10 +68,15 @@ $(document).ready(function(){
 
     $('#rotate').click(function() {
         rotation -= 120;
-        duration:1000;
+        duration:2000;
         $('#notitle').rotate(rotation);
     });
 
+    $('#turn').click(function() {
+        rotation -= 120;
+        duration:2000;
+        $('#notitle').rotate(rotation);
+    });
 
     $(".card").flip({
       axis: 'x',
@@ -261,5 +266,13 @@ $(document).ready(function(){
       $('#canvascontent').val(dataURL);
       console.log(dataURL);
     });
+
+    var button = document.getElementById('btn-download');
+    button.addEventListener('click', function (e) {
+    var dataURL = canvas.toDataURL('image/png');
+    button.href = dataURL;
+});
+
+
 
 });

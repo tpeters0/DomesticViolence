@@ -22,8 +22,8 @@
 }
 
 #wheel-link{
-margin-left: 5%;
-margin-top: 10px;
+  margin-left: 5%;
+  margin-top: 10px;
 }
 
 body{
@@ -72,6 +72,7 @@ body{
   position:relative;
   bottom: 0;
   width: 100%;
+  margin-top: 50px;
 }
 
 .text-link{
@@ -87,14 +88,17 @@ body{
 
 #tension:hover{
   fill:yellow;
+  cursor: pointer;
 }
 
 #explosive:hover{
   fill: red;
+  cursor: pointer;
 }
 
 #honeymoon:hover{
   fill: blue;
+  cursor: pointer;
 }
 
 .cycle-view{
@@ -111,20 +115,43 @@ body{
   width:600px;
   height:600px;
   transform:rotateZ(0deg);
-
 }
+
+#notitle:hover{
+  cursor: pointer;
+}
+
 
 #wheel-title{
   position:absolute;
-  top:200px;
+  top:215px;
   left:150px;
   z-index: 1;
   font-family:fantasy;
   font-size: 3em;
   width: 300px;
   text-align:center;
-
+  cursor: pointer;
 }
+
+#turn{
+  position:absolute;
+  left: 60%;
+  display:inline-block;
+  color: black;
+  text-align: center;
+  width: 200px;
+  background-color: white;
+  padding: 3px;
+  border-radius: 10px;
+  font-family: helvetica;
+}
+
+#turn:hover {
+    cursor: pointer;
+}
+
+
 
 .style0{
   stroke:	#231F20;
@@ -137,6 +164,12 @@ body{
   stroke-width:	3;
   stroke-miterlimit:	10;
   fill:	none;
+}
+.style16{
+  stroke:	#231F20;
+  stroke-width:	0.25;
+  stroke-miterlimit:	10;
+  fill:	#542D81;
 }
 
 #set-of-cards{
@@ -251,7 +284,14 @@ body{
 
 #why_bfly{
   margin-left: 25%;
-  margin-right: 25%;  
+  margin-right: 25%;
   font-size: 20px;
   font-family: helvetica, sans-serif;
+}
+
+#btn-download{
+  color:black;
+  width: 100%;
+  display: inline;
+  text-align: center;
 }

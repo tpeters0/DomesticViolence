@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="612px" height="603.372px" viewBox="0 0 612 603.372" enable-background="new 0 0 612 603.372" xml:space="preserve">
+<style>
+	.style0{
+		stroke:	#000000;
+		stroke-width:	3;
+		stroke-miterlimit:	10;
+		fill:	none;
+	}
+	.style1{
+		stroke:	#000000;
+		stroke-width:	3;
+		stroke-miterlimit:	10;
+		fill:	#C48A9A;
+	}
+	.style10{
+		font-size:	36;
+		font-family:	'Herculanum';
+		letter-spacing:	2;
+	}
+	.style11{
+		font-size:	36;
+		font-family:	'Herculanum';
+	}
+	.style12{
+		font-size:	40;
+		font-family:	'Herculanum';
+	}
+	.style13{
+		font-size:	48;
+		font-family:	'Herculanum';
+		letter-spacing:	6;
+	}
+	.style14{
+		font-size:	42;
+		font-family:	'Herculanum';
+		letter-spacing:	6;
+	}
+	.style15{
+		font-size:	52.8019;
+		font-family:	'Herculanum';
+		letter-spacing:	6.6;
+	}
+	.style16{
+		stroke:	#231F20;
+		stroke-width:	0.25;
+		stroke-miterlimit:	10;
+		fill:	#542D81;
+	}
+	.style2{
+		stroke:	#000000;
+		stroke-width:	3;
+		stroke-miterlimit:	10;
+		fill:	#D7D494;
+	}
+	.style3{
+		stroke:	#000000;
+		stroke-width:	3;
+		stroke-miterlimit:	10;
+		fill:	#75A9C6;
+	}
+	.style4{
+		stroke:	#000000;
+		stroke-width:	4;
+		stroke-miterlimit:	10;
+		fill:	#EAE6DA;
+	}
+	.style5{
+		fill:	none;
+	}
+	.style6{
+		font-size:	60;
+		font-family:	'SignPainter-HouseScript';
+	}
+	.style7{
+		font-size:	59.9968;
+		font-family:	'BirchStd';
+		letter-spacing:	11;
+	}
+	.style8{
+		font-size:	67.2618;
+		font-family:	'Herculanum';
+	}
+	.style9{
+		font-size:	49.44;
+		font-family:	'Herculanum';
+	}
+</style><g id="Layer_1_1_">
+	
+		<line x1="298.4" y1="297.9" x2="298.4" y2="547.9" class="style0"/>
+	
+		<line x1="514.9" y1="172.9" x2="298.4" y2="297.9" class="style0"/>
+	<g>
+		<path d="M298.351 297.879L298.351 297.9 L82.376 173.186c-21.224 36.681-33.377 79.266-33.377 124.692c0 137.7 111.6 249.4 249.4 249.353l0 0V297.879z" class="style1"/>
+		<path d="M297.999 297.879L297.999 297.9 l215.975-124.693c21.225 36.7 33.4 79.3 33.4 124.692c0 137.712-111.639 249.353-249.352 249.353l0 0V297.879z" class="style2"/>
+		<path d="M297.984 298.344L297.984 298.3 l215.975-124.692c-21.154-36.721-51.957-68.539-91.298-91.252C303.397 13.5 150.9 54.4 82 173.668l-0.001 0 L297.984 298.344z" class="style3"/>
+	</g>
+</g>
+<g id="Layer_2">
+	<circle cx="298.4" cy="297.9" r="150.1" class="style4"/>
+</g>
+<g id="text">
+	<rect x="196" y="80" width="292" height="91" class="style5"/>
+	<text transform="matrix(1 0 0 1 196 117.5669)" class="style6">Honeymoon</text>
+	
+		<rect x="332" y="350" transform="matrix(0.5 -0.866 0.866 0.5 -119.8492 579.3899)" width="219.7" height="87" class="style5"/>
+	
+		<text transform="matrix(-0.6691 0.7431 -0.7431 -0.6691 497.0342 300.0068)" class="style7">T</text>
+	
+		<text transform="matrix(-0.6691 0.7431 -0.7431 -0.6691 480.916 327.2622)" class="style7">e</text>
+	
+		<text transform="matrix(-0.6691 0.7431 -0.7431 -0.6691 466.8203 352.0962)" class="style7">n</text>
+	
+		<text transform="matrix(-0.6691 0.7431 -0.7431 -0.6691 451.1807 378.3403)" class="style7">s</text>
+	
+		<text transform="matrix(-0.6691 0.7431 -0.7431 -0.6691 437.4355 401.0708)" class="style7">i</text>
+	
+		<text transform="matrix(-0.6691 0.7431 -0.7431 -0.6691 427.4121 420.1216)" class="style7">o</text>
+	
+		<text transform="matrix(-0.6691 0.7431 -0.7431 -0.6691 412.7959 445.6714)" class="style7">n</text>
+	
+		<rect x="13.9" y="304.1" transform="matrix(0.5 0.866 -0.866 0.5 392.8956 40.1622)" width="295.5" height="112.5" class="style5"/>
+	<text transform="matrix(-0.5156 -0.7096 0.809 -0.5878 228.7197 485.1147)" class="style8">E</text>
+	<text transform="matrix(-0.5707 -0.7854 0.809 -0.5878 202.0879 460.7183)" class="style9">x</text>
+	<text transform="matrix(-0.5707 -0.7854 0.809 -0.5878 175.229 434.7534)" class="style9">p</text>
+	
+		<text transform="matrix(-0.6157 -0.788 0.788 -0.6157 160.2988 408.9604)" class="style10">l</text>
+	<text transform="matrix(-0.6157 -0.788 0.788 -0.6157 149.3052 389.3628)" class="style11">o</text>
+	<text transform="matrix(-0.6157 -0.788 0.788 -0.6157 135.4062 366.3101)" class="style12">s</text>
+	
+		<text transform="matrix(-0.3907 -0.9205 0.9205 -0.3907 125.5918 353.3989)" class="style13">i</text>
+	
+		<text transform="matrix(-0.3256 -0.9455 0.9455 -0.3256 120.3428 329.7202)" class="style14">v</text>
+	
+		<text transform="matrix(-0.3552 -0.8368 0.9205 -0.3907 105.0249 298.6714)" class="style15">e</text>
+</g>
+<g>
+	<path d="M424.515 266.4 c-1.915-23.513-9.941-51.913-47.614-72.78l-7.594 6.877c26.101 11.8 44.9 36.2 47.3 66.957l-12.812-5.934l19.472 31.2 l10.456-34.919L424.515 266.427z" class="style16"/>
+	<path d="M261.882 420 c21.189 10.4 49.7 18 86.889-3.773l-2.032-10.044c-23.45 16.429-54.095 20.139-81.717 6.473l11.632-7.987l-36.744 0.8 l24.675 26.828L261.882 419.964z" class="style16"/>
+	<path d="M203.63 208.3 c-18.916 14.091-38.73 35.958-36.448 78.96l9.859 2.799c-3.859-28.369 6.883-57.311 31.685-75.602l1.763 13.997l16.114-33.038 l-35.162 9.649L203.63 208.256z" class="style16"/>
+</g>
+</svg>
