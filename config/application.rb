@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
+#use below in local testing.  Comment out when push to github so heroku does not use:
 # ENV.update YAML.load(File.read(File.expand_path('../application.yml', __FILE__)))
 
 
@@ -25,5 +27,8 @@ module DvApp
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.serve_static_files = true
+
   end
 end
