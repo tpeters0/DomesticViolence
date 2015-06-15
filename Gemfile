@@ -31,6 +31,8 @@ gem 'fog'
 
 gem 'fog-aws'
 
+gem 'rails_12factor', group: :production
+
 # gem 'carrierwave_direct'
 #
 # gem 'sidekiq'
