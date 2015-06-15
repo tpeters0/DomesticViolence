@@ -149,7 +149,7 @@ $(document).ready(function(){
       // Load images
       outlineImage.onload = function() { resourceLoaded();
     	};
-    	outlineImage.src = <%= asset_path('butterfly-white.png') %>
+    	outlineImage.src = asset_path('butterfly-white.png');
 
 
     	$('#canvas').mousedown(function(e)
