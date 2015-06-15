@@ -2,8 +2,11 @@ Domestic Abuse
 
 What the average person might not (but should) know about domestic abuse.
 
+Currently deployed at:  https://intense-temple-8404.herokuapp.com/
+
+
 Current Features
-- Interactive Wheel with Cycle of Abuse
+- Interactive Cycle of Abuse
 - Design a butterfly - support awareness and healthy behavior
 
 User Stories
@@ -11,6 +14,7 @@ User Stories
   2. View more information about what defines the cycle stage at the top of the wheel
   3. Select and view victim characteristics depending on cycle stage
   4. Select and view abuser characteristics depending on cycle stage
+  
   5. Create a butterfly design
   6. Save butterfly design to gallery
 
@@ -19,10 +23,8 @@ Git repo: https://github.com/tpeters0/DomesticViolence
 Created with Ruby on Rails, v 4
   Also using:
     - javascript
-    - jQuery Plugins
-
-  For testing:
-    - jasmine for javascript
-    - rspec for ruby
-
-https://intense-temple-8404.herokuapp.com/
+    - jQuery
+    - carrierwave
+    - fog
+    - rmagick
+    - Amazon S3
