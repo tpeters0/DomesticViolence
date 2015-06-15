@@ -31,6 +31,14 @@ gem 'fog'
 
 gem 'fog-aws'
 
+# gem 'carrierwave_direct'
+#
+# gem 'sidekiq'
+
+
+
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

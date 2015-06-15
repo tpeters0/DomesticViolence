@@ -11,6 +11,9 @@ class ButterfliesController < ApplicationController
 
   def new
     @butterfly = Butterfly.new
+    # @uploader = Butterfly.new.image
+    # @uploader.success_action_redirect = new_butterfly_url
+
   end
 
   def create
