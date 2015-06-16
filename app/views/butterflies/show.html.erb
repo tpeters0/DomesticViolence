@@ -1,9 +1,15 @@
+<div class="header">
+  <div id="bfly-icon">
+    <%= link_to butterflies_path(@butterflies) do %>
+    <%= image_tag ('butterfly-sm.png'), :title => "Return to Butterfly Gallery" %>
+    <% end %>
+  </div>
 
-<div id="link-icon">
-  <%= link_to butterflies_path(@butterflies) do %>
-  <%= image_tag ('butterfly-sm.png') %>
-  <% end %>
+  <h1>Create a Butterfly</h1>
+
+
 </div>
+
 <h2><%= @butterfly.title %></h2>
 
 

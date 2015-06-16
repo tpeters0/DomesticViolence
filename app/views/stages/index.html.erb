@@ -1,16 +1,23 @@
-<div id="header">
+<div class="header">
+  <container class="nav">
 
-  <div id="link-icon">
-    <%= link_to butterflies_path(@butterflies) do %>
-    <%= image_tag ('butterfly-sm.png') %>
-    <% end %>
-  </div>
+    <div id="home">
+      <%= link_to root_path do %>
+        <%= image_tag ('home_opt.svg'), :id => "house", :title => "Domestic Abuse Awareness Homepage" %>
+      <% end %>
+    </div>
 
-  <div id="ribbon">
-    <%= link_to root_path do %>
-    <%= image_tag ('ribbon-xsm.png') %>
-    <% end %>
-  </div>
+    <div id="bfly-icon">
+      <%= link_to butterflies_path(@butterflies) do %>
+        <%= image_tag ('butterfly-sm.png'), :title => "Go to Butterfly Gallery" %>
+      <% end %>
+    </div>
+
+  </container>
+
+  <h1> Stages of Abuse </h1>
+</div>
+
 </div>
 
 <div class="cycle-view">

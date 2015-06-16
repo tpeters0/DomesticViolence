@@ -66,6 +66,11 @@ $(document).ready(function(){
         $('#notitle').rotate(rotation);
     });
 
+    $('#wheel-title').hover(function() {
+      // $(this).append($("<span> Turn the wheel </span>"));
+    });
+
+
     $('#rotate').click(function() {
         rotation -= 120;
         duration:2000;

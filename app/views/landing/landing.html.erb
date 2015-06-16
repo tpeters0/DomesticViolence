@@ -6,48 +6,34 @@
   </head>
   <body>
 
-    <div id="header">
+    <div class="header">
 
       <div id="wheel-link">
         <%= link_to image_tag('wheel_text_logo.png'), stages_path %>
       </div>
 
-      <h1>Domestic Abuse</h1>
-
-      <div id="ribbon">
-        <%= link_to root_path do %>
-        <%= image_tag ('ribbon-xsm.png') %>
+      <div id="bfly-icon">
+        <%= link_to butterflies_path(@butterflies) do %>
+        <%= image_tag ('butterfly-sm.png') %>
         <% end %>
       </div>
+
+
     </div>
 
+    <div id="ribbon">
+      <%= link_to root_path do %>
+      <%= image_tag ('ribbon-xsm.png') %>
+      <% end %>
+    </div>
+
+    <h1>Domestic Abuse</h1>
 
     <h2> Why should you learn about it? </h2>
 
 <p>Contrary to popular belief, domestic violence occurs across all socioeconomic and cultural backgrounds. </p>
 <p>It has no boundaries and exists among dating relationships, same-sex relationships, and older victims.</p>
 <p> It also impacts the lives of children, people with disabilities, and immigrants.</p>
-
-<div id="link-icon">
-  <%= link_to butterflies_path(@butterflies) do %>
-  <%= image_tag ('butterfly-sm.png') %>
-  <% end %>
-</div>
-
-
-<html><body>
-
-  
-
-
-
-
-
-
-
-
-
-
 
 
 
