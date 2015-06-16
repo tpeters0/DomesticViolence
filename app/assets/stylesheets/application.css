@@ -15,7 +15,7 @@
  */
 
 .header{
-  display: inline-block;
+  /*display: inline-block;*/
   width: 100%;
   height: 100px;
   background-color: darkgray;
@@ -24,40 +24,51 @@
 .nav {
     line-height:30px;
     background-color: black;
-    height:500px;
+    height:100%;
     width:200px;
     float:left;
+    margin-left: 30px;
     padding: 15px;
+    position:absolute;
+    display: inline-block;
 }
-/*.nav{
-  display:inline-block;
-  text-align: center;
-  width: 500px;
-}*/
 
 #house{
   width: 150px;
+  position:relative;
+  margin-top: 15px;
+  margin-left: 25px;
 
 }
 
 #ribbon{
   margin:20px;
-  /*margin-right: 20px;*/
-  /*top: 5px;
-  right: 5px;*/
-  /*position:absolute;*/
+  float:right;
+  position:relative;
 }
 
 #wheel-link{
-  margin: 20px;
-  /*margin-left: 5%;
-  margin-top: 10px;*/
+  margin: 30px;
+  margin-top: 10px;
+}
+
+#return-to-wheel-link{
+  margin-right: 25%;
+  padding-top: 25px;
+  padding-bottom: 0px;
+  width:200px;
+  height: 150px;
+  background-color: #7D59A4;
+  border-radius: 5px;
+  display:inline-block;
+  text-align: center;
+  vertical-align: middle;
 }
 
 #bfly-icon{
-  /*position:absolute;
-  margin-top: 30px;
-  margin-left: 20px;*/
+  position:absolute;
+  margin-top: 15px;
+  margin-left: 20px;
   transform:rotateZ(20deg);
   width: 100px;
 }
@@ -73,7 +84,7 @@ h1{
   vertical-align: middle;
   font-size: 3em;
   /*color:#4A2273;*/
-  color: #7D59A4;
+  color: black;
 }
 
 h2{
@@ -116,7 +127,16 @@ body{
   padding:20px;
 }
 
-
+section{
+  display:inline-block;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: auto;
+  width: 50%;
+  height: 500px;
+  background-color: darkgray;
+  position:relative;
+}
 
 #tension:hover{
   fill:yellow;
@@ -305,7 +325,6 @@ body{
 }
 
 .butterfly_image{
-
   margin: auto;
   text-align: center;
 }

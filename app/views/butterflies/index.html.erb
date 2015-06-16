@@ -1,16 +1,17 @@
 <div class="header">
 
-  <div id="wheel-link">
-    <%= link_to image_tag('wheel_text_logo.png'), stages_path %>
-  </div>
-
-  <h1>Butterfly Gallery</h1>
-
-  <div id="ribbon">
+  <div id="home">
     <%= link_to root_path do %>
-    <%= image_tag ('ribbon-xsm.png') %>
+      <%= image_tag ('home_opt.svg'), :id => "house", :title => "Domestic Abuse Awareness Homepage" %>
     <% end %>
   </div>
+
+  <div id="wheel-link">
+    <%= link_to image_tag('wheel_text_logo.png'), stages_path, :title => "Learn About the Cycle of Abuse"  %>
+  </div>
+</div>
+
+  <h1>Butterfly Gallery</h1>
 </div>
 
 <ul id="butterflies">

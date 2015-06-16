@@ -1,18 +1,8 @@
-
 <div class="header">
-  <div id="wheel-link">
-    <%= link_to image_tag('wheel_text_logo.png'), stages_path, :title => "Return to Cycle Wheel" %>
-  </div>
 
   <h1><%= @stage.name %> Stage </h1>
 
-  <div id="ribbon">
-    <%= link_to root_path do %>
-    <%= image_tag ('ribbon-xsm.png') %>
-    <% end %>
-  </div>
 </div>
-
 
 <p><%= @stage.description %></p>
 
@@ -73,6 +63,9 @@
       </div>
     </div>
   <% end %>
+  <div id="return-to-wheel-link">
+    <%= link_to image_tag('wheel_text_logo.png'), stages_path, :title => "Return to Cycle" %>
+  </div>
 </div>
 
 </container>
