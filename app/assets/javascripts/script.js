@@ -275,12 +275,10 @@ $(document).ready(function(){
       };
 
 
-
-
-
-
     	function redraw(){
         context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
+        context.fillStyle = "white"
+        context.fillRect(0, 0, context.canvas.width, context.canvas.height);
         context.lineJoin = "round";
 
         context.drawImage(outlineImage, drawingAreaX, drawingAreaY, drawingAreaWidth, drawingAreaHeight);
@@ -326,6 +324,8 @@ $(document).ready(function(){
             	//context.globalCompositeOperation = "source-over";// To erase instead of draw over with white
             	context.restore();
 
+              context.globalAlpha = 1;
+
             	// Draw the outline image
             	context.drawImage(outlineImage, drawingAreaX, drawingAreaY, drawingAreaWidth, drawingAreaHeight);
             }
@@ -334,21 +334,66 @@ $(document).ready(function(){
     });
 
 
-    $('#btnCanvas').mousedown(function(convert)
-    {
-      var dataURL =  canvas.toDataURL('image/png');
-      // var data = dataURL.replace(/^data:image\/png;base64,/, "");
-      // var dataJSON = JSON.stringify(getBase64Image(dataURL));
-      // var binary = atob(dataURL.split(',')[1]);
-      // var array = [];
-      //   for(var i = 0; i < binary.length; i++) {
-      //   array.push(binary.charCodeAt(i));
-      //   }
-      $('#hiddenCanvas').val(dataURL);
-
-    });
+    //     var button = document.getElementById('btn-download');
+    //     button.addEventListener('click', function (e) {
+    //     var dataURL = canvas.toDataURL('image/png');
+    //     button.href = dataURL;
+    // });
 
 
+    // $('#btnCanvas').mousedown(function(convert)
+    // {
+    //   var dataURL =  canvas.toDataURL('image/png');
+    //   // var data = dataURL.replace(/^data:image\/png;base64,/, "");
+    //
+    //   console.log(dataURL)
+    //   $('#hiddenCanvas').val(dataURL);
+    //
+    // });
+//
+
+
+//
+//
+// $('#btnCanvas').on('click', function(e) {
+//
+//   var dataURL = canvas.toDataURL("image/png;base64;");
+//
+//   // Get our file
+//   var file= dataURLtoBlob(dataURL);
+//
+//   // Create new form data
+//   var fd = new FormData();
+//
+//   // Append our Canvas image file to the form data
+//   fd.append("butterfly", file);
+//
+//   // And send it
+//   $.ajax({
+//     url: "/butterflies",
+//     type: "POST",
+//     data: fd,
+//     processData: false,
+//     contentType: false,
+//   });
+// });
+//
+// // Convert dataURL to Blob object
+// function dataURLtoBlob(dataURL) {
+//
+//   // Decode the dataURL
+//   var binary = atob(dataURL.split(',')[1]);
+//
+//   // Create 8-bit unsigned array
+//   var array = [];
+//   for(var i = 0; i < binary.length; i++) {
+//     array.push(binary.charCodeAt(i));
+//   }
+//
+//   // Return our Blob object
+//   return new Blob([new Uint8Array(array)], {type: 'image/png'});
+// }
+//
 
 
  });

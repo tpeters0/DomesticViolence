@@ -8,6 +8,8 @@ class ImageUploader < CarrierWave::Uploader::Base
   include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
 
+  # include Cloudinary::CarrierWave
+  # process :tags => ["temp"]
 
 
 
