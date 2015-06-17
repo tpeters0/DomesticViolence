@@ -317,7 +317,7 @@ section{
 }
 
 .tools{
-  text-align:center;
+  text-align:right;
 }
 
 .butterfly_actions{
@@ -332,6 +332,22 @@ section{
 #butterflies{
   text-align: center;
 }
+
+/*#instructions{
+  width: 60%;
+  float: right;
+  margin-right: 20%;
+}
+
+#drawing{
+  display: inline;
+  width: 100%;
+}
+
+#allTools{
+  width: 100px;
+  display: block;
+}*/
 
 #why_bfly{
   margin-left: 25%;

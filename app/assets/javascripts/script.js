@@ -157,7 +157,7 @@ $(document).ready(function(){
 
       var canvas = document.getElementById("canvas");
       var context = canvas.getContext("2d");
-
+      var rect = canvas.getBoundingClientRect();
 
       // Load images
       outlineImage.onload = function() { resourceLoaded();
@@ -167,17 +167,17 @@ $(document).ready(function(){
     	$('#canvas').mousedown(function(e)
     	{
     		// console.log("mousedown!")
-      	var mouseX = e.pageX - this.offsetLeft;
-        var mouseY = e.pageY - this.offsetTop;
+      	var mouseX = e.pageX - rect.left;
+        var mouseY = e.pageY - rect.top;
 
         paint = true;
-        addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop);
+        addClick(e.pageX - rect.left, e.pageY - rect.top);
         redraw();
     	});
 
     	$('#canvas').mousemove(function(e){
         if(paint){
-          addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true);
+          addClick(e.pageX - rect.left, e.pageY - rect.top, true);
           redraw();
         }
       });

@@ -7,38 +7,36 @@
   </div>
 
   <h1>Create a Butterfly</h1>
-
 </div>
 
-</div>
+<section id=drawing>
+  <div id="allTools">
+    <li class="tools" id="colors">
+      <span>Choose a color: </span>
+      <button id="choosePurple">Purple</button>
+      <button id="chooseGreen">Green</button>
+      <button id="chooseYellow">Yellow</button>
+      <button id="chooseBrown">Brown</button>
+      <button id="chooseRed">Red</button>
+      <button id="chooseBlue">Blue</button>
+      <button id="chooseBlack">Black</button>
+      <button id="chooseEraser">Eraser</button>
+    </li>
+
+    <li class="tools" id="size">
+      <span class="highlight">Choose a brush size: </span>
+      <button id="chooseExtraSmall">Extra Small</button>
+      <button id="chooseSmall">Small</button>
+      <button id="chooseMedium">Medium</button>
+      <button id="chooseLarge">Large</button>
+      <button id="chooseHuge">Huge</button>
+    </li>
+
+    <canvas id="canvas" width="600" height="500"></canvas>
+</section>
+
 <div id= instructions>
   <p> Express yourself by designing a butterfly, a symbol of freedom and hope, with your thoughts regarding domestic abuse ... </p>
   <p>Right click to save your created image.  Then, if you want to submit it to include in the butterfly gallery, upload the file below.</p>
 </div>
-
-<canvas id="canvas" width="600" height="500"></canvas>
-
-<li class=tools>
-  <span class="highlight">Choose a color: </span>
-  <button id="choosePurple">Purple</button>
-  <button id="chooseGreen">Green</button>
-  <button id="chooseYellow">Yellow</button>
-  <button id="chooseBrown">Brown</button>
-  <button id="chooseRed">Red</button>
-  <button id="chooseBlue">Blue</button>
-  <button id="chooseBlack">Black</button>
-  <button id="chooseEraser">Eraser</button>
-</li>
-
-<li class=tools>
-  <span class="highlight">Choose a brush size: </span>
-  <button id="chooseExtraSmall">Extra Small</button>
-  <button id="chooseSmall">Small</button>
-  <button id="chooseMedium">Medium</button>
-  <button id="chooseLarge">Large</button>
-  <button id="chooseHuge">Huge</button>
-</li>
-
-<%= render partial: "form" %>
-
-<% end %>
+  <%= render partial: "form" %>
