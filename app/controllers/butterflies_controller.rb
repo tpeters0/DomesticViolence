@@ -11,19 +11,25 @@ class ButterfliesController < ApplicationController
 
   def new
     @butterfly = Butterfly.new
-    # @uploader = Butterfly.new.image
-    # @uploader.success_action_redirect = new_butterfly_url
 
+    respond_to do |f|
+      f.html # new.html.erb
+      f.json { render json: @butterfly}
+    end
   end
 
   def create
     @butterfly = Butterfly.new(butterfly_params)
 
+    respond_to do |f|
       if @butterfly.save
-        redirect_to(butterfly_path(@butterfly))
+        f.html {redirect_to(butterfly_path(@butterfly))}
+        f.json {render json: @butterfly, status: :created, location: @butterfly }
       else
-        render(:new)
+        f.html { render action: "new" }
+        f.json { render json: @butterfly.errors, status: :unprocessable_entity }
       end
+    end
   end
 
   def edit

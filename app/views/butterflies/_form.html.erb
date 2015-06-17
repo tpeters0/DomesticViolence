@@ -1,18 +1,16 @@
 <%= form_for @butterfly,      remote: true, :html => {:multipart => true} do |f| %>
 
-
   <p>
    <%= f.label                :title, "Name of Butterfly" %>
    <%= f.text_field           :title %>
   </p>
 
-
-  <p>
-   <%= f.file_field           :image %>
-  </p>
-
   <!-- <p>
-   <%= f.hidden_field         :image, :value => id="canvascontent" %>
+   <%= f.file_field           :image %>
+  </p> -->
+  <%= f.hidden_field          :image, :id => "hiddenCanvas"%>
+  <!-- <p>
+   <%= f.hidden_field         :image, :value => params[:canvas] %>
   </p> -->
 
   <!-- <p>

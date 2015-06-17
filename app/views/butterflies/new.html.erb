@@ -18,21 +18,37 @@
 
 <canvas id="canvas" width="600" height="500"></canvas>
 
-<!-- <button id="clearCanvas" type="button">Clear</button> -->
-
-<li id=tools>
+<li class=tools>
   <span class="highlight">Choose a color: </span>
   <button id="choosePurple">Purple</button>
   <button id="chooseGreen">Green</button>
   <button id="chooseYellow">Yellow</button>
   <button id="chooseBrown">Brown</button>
   <button id="chooseRed">Red</button>
+  <button id="chooseBlue">Blue</button>
   <button id="chooseBlack">Black</button>
+  <button id="chooseEraser">Eraser</button>
 </li>
 
-<!-- <button id="convertCanvas" type="button">convert</button> -->
+<li class=tools>
+  <span class="highlight">Choose a brush size: </span>
+  <button id="chooseExtraSmall">Extra Small</button>
+  <button id="chooseSmall">Small</button>
+  <button id="chooseMedium">Medium</button>
+  <button id="chooseLarge">Large</button>
+  <button id="chooseHuge">Huge</button>
+</li>
 
-<a href="#" id="btn-download">Open Finished Image in New Window</a>
+<!-- <li class=tools>
+  <span class="highlight">Choose a mode: </span>
+  <button id="chooseEraser">Eraser</button>
+  <button id="chooseMarker">Marker</button>
+</li> -->
+
+
+ <button id="btnCanvas" type="button">Convert</button>
+
+<!-- <a href="#" id="btn-download">Open Finished Image in New Window</a> -->
 
 <%= render partial: "form" %>
 <!-- # <%= form_for(@butterfly, remote: true) do |f| %> -->
