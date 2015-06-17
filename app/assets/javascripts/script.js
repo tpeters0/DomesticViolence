@@ -99,13 +99,12 @@ $(document).ready(function(){
     */
     $( document ).ready(function() {
 
-
     	var canvas;
     	var context;
     	var canvasWidth = 600;
     	var canvasHeight = 500;
       var outlineImage = new Image();
-    	var padding = 10;
+    	// var padding = 10;
     	var lineWidth = 8;
     	var colorPurple = "purple";
     	var colorGreen = "#659b41";
@@ -122,6 +121,7 @@ $(document).ready(function(){
     	var clickSize = new Array();
     	var clickDrag = new Array();
     	var paint = false;
+      var curTool = "marker";
     	var curColor = colorGreen;
     	var curSize = "medium";
     	var mediumStartX = 18;
@@ -223,6 +223,15 @@ $(document).ready(function(){
       });
 
 
+      $('#chooseMarker').mousedown(function(e){
+        curTool = "marker";
+      });
+
+      $('#chooseBucket').mousedown(function(e){
+        curTool = "bucket";
+      });
+
+
 
       $('#chooseExtraSmall').mousedown(function(e){
     		curSize = "extrasmall";
@@ -255,15 +264,15 @@ $(document).ready(function(){
         clickSize.push(curSize);
     	};
 
-      // clearClick = function () {
-      //
-			// clickX = [clickX[clickX.length - 1]];
-			// clickY = [clickY[clickY.length - 1]];
-			// clickTool = [clickTool[clickTool.length - 1]];
-			// clickColor = [clickColor[clickColor.length - 1]];
-			// clickSize = [clickSize[clickSize.length - 1]];
-			// clickDrag = [clickDrag[clickDrag.length - 1]];
-      // };
+      clearClick = function () {
+
+			clickX = [clickX[clickX.length - 1]];
+			clickY = [clickY[clickY.length - 1]];
+			clickTool = [clickTool[clickTool.length - 1]];
+			clickColor = [clickColor[clickColor.length - 1]];
+			clickSize = [clickSize[clickSize.length - 1]];
+			clickDrag = [clickDrag[clickDrag.length - 1]];
+      };
 
 
 
@@ -287,7 +296,7 @@ $(document).ready(function(){
             }else if(clickSize[i] == "large"){
                 radius = 20;
             }else if(clickSize[i] == "huge"){
-                radius = 30;
+                radius = 40;
             }else{
                 radius = 5;
             }
@@ -317,114 +326,9 @@ $(document).ready(function(){
             	//context.globalCompositeOperation = "source-over";// To erase instead of draw over with white
             	context.restore();
 
-            	context.globalAlpha = 1; // No IE support
-
             	// Draw the outline image
             	context.drawImage(outlineImage, drawingAreaX, drawingAreaY, drawingAreaWidth, drawingAreaHeight);
             }
-
-      //
-      //   if (curTool === "bucket") {
-      //
-			// 	// Draw the background
-			// 	context.drawImage(bucketBackgroundImage, 0, 0, canvasWidth, canvasHeight);
-      //
-			// 	// Draw the current state of the color layer to the canvas
-			// 	contexts.drawing.putImageData(colorLayerData, 0, 0, 0, 0, drawingAreaWidth, drawingAreaHeight);
-      //
-			// 	// Draw the color swatches
-			// 	locX = 52;
-			// 	locY = 19;
-			// 	drawColorSwatch(colorPurple, locX, locY);
-      //
-			// 	locY += 46;
-			// 	drawColorSwatch(colorGreen, locX, locY);
-      //
-			// 	locY += 46;
-			// 	drawColorSwatch(colorYellow, locX, locY);
-      //
-			// 	locY += 46;
-			// 	drawColorSwatch(colorBrown, locX, locY);
-      //
-			// } else {
-      //
-			// 	// Draw line on ruler to indicate size
-			// 	switch (curSize) {
-			// 	case "small":
-			// 		locX = 467;
-			// 		break;
-			// 	case "normal":
-			// 		locX = 450;
-			// 		break;
-			// 	case "large":
-			// 		locX = 428;
-			// 		break;
-			// 	case "huge":
-			// 		locX = 399;
-			// 		break;
-			// 	default:
-			// 		break;
-			// 	}
-			// 	locY = sizeLineStartY;
-			// 	context.beginPath();
-			// 	context.rect(locX, locY, 2, 12);
-			// 	context.closePath();
-			// 	context.fillStyle = '#333333';
-			// 	context.fill();
-      //
-			// 	if (clickX.length) {
-      //
-			// 		// For each point drawn
-			// 		for (i = 0; i < clickX.length; i += 1) {
-      //
-			// 			contexts.drawing.beginPath();
-      //
-			// 			// Set the drawing radius
-			// 			switch (clickSize[i]) {
-			// 			case "small":
-			// 				radius = 2;
-			// 				break;
-			// 			case "normal":
-			// 				radius = 5;
-			// 				break;
-			// 			case "large":
-			// 				radius = 10;
-			// 				break;
-			// 			case "huge":
-			// 				radius = 20;
-			// 				break;
-			// 			default:
-			// 				break;
-			// 			}
-      //
-			// 			// If dragging then draw a line between the two points
-			// 			if (clickDrag[i] && i) {
-			// 				contexts.drawing.moveTo(clickX[i - 1], clickY[i - 1]);
-			// 			} else {
-			// 				// The x position is moved over one pixel so a circle even if not dragging
-			// 				contexts.drawing.moveTo(clickX[i] - 1, clickY[i]);
-			// 			}
-			// 			contexts.drawing.lineTo(clickX[i], clickY[i]);
-      //
-			// 			// Set the drawing color
-			// 			if (curTool === "eraser") {
-			// 				contexts.drawing.strokeStyle = 'white';
-			// 			} else {
-			// 				contexts.drawing.strokeStyle = "rgb(" + clickColor[i].r + ", " + clickColor[i].g + ", " + clickColor[i].b + ")";
-			// 			}
-      //
-			// 			contexts.drawing.lineCap = "round";
-			// 			contexts.drawing.lineJoin = "round";
-			// 			contexts.drawing.lineWidth = radius;
-			// 			contexts.drawing.stroke();
-			// 			contexts.drawing.closePath();
-			// 		}
-      //
-			// 		clearClick();
-			// 	}
-			// }
-
-
 
 
     });
@@ -433,14 +337,18 @@ $(document).ready(function(){
     $('#btnCanvas').mousedown(function(convert)
     {
       var dataURL =  canvas.toDataURL('image/png');
-      var data = dataURL.replace(/^data:image\/png;base64,/, "");
+      // var data = dataURL.replace(/^data:image\/png;base64,/, "");
       // var dataJSON = JSON.stringify(getBase64Image(dataURL));
-
-      $('#hiddenCanvas').val(data);
+      // var binary = atob(dataURL.split(',')[1]);
+      // var array = [];
+      //   for(var i = 0; i < binary.length; i++) {
+      //   array.push(binary.charCodeAt(i));
+      //   }
+      $('#hiddenCanvas').val(dataURL);
 
     });
 
 
 
 
-});
+ });
