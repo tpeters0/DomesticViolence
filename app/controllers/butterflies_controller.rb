@@ -17,21 +17,11 @@ class ButterfliesController < ApplicationController
   def create
     @butterfly = Butterfly.new(butterfly_params)
 
-      # File.open("#{Rails.root}/public/uploads/original_filename.png", 'wb') do |f|
-      #   f.write(params[:butterfly].read)
-      #   if params[:butterfly].try(:original_filename) == 'blob'
-      #     params[:butterfly].original_filename << '.png'
-      #   end
-      #
-      #   Butterfly.create!(butterfly: params[:butterfly])
-      # end
-
       if @butterfly.save
         redirect_to(butterfly_path(@butterfly))
       else
         render :new
       end
-
   end
 
   def edit
@@ -56,7 +46,5 @@ class ButterfliesController < ApplicationController
     params.require(:butterfly).permit(:title, :image)
 
   end
-
-
 
 end

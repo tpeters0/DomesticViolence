@@ -14,6 +14,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require interact.min
-//= require cloudinary
 //= require flip
 //= require_tree .

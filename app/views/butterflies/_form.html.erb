@@ -5,30 +5,19 @@
    <%= f.text_field           :title %>
   </p>
 
-  <!-- <p>
+  <p>
    <%= f.file_field           :image %>
-  </p> -->
+  </p>
 
-  <%= f.hidden_field          :image, :id => "hiddenCanvas"%>
+  <!-- <%= f.hidden_field     :image, :id => "hiddenCanvas"%> -->
 
+  <!-- for implementing user and permissions -->
   <!-- <p>
-    <%= f.hidden_field          :image_cache %>
-    <%= f.hidden_field          :image, :id => "hiddenCanvas"%>
-  </p> -->
-
-<!-- <p>
-     <%= f.cl_image_upload(:image)%>
-</p> -->
-  <!-- <p>
-  #  <%= f.hidden_field         :image, :value => params[:canvas] %>
-  # </p> -->
-
-  <!-- <p>
-  #   <%= f.hidden_field        :user_id %>
+  #   <%= f.hidden_field      :user_id %>
   # </p> -->
 
   <p>
-   <%= f.submit                  :id => "commit", :value => "Upload Butterfly to Gallery"%>
+   <%= f.submit               :value => "Upload Butterfly to Gallery"%>
   </p>
 
 <% end %>
