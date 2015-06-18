@@ -10,7 +10,8 @@
 </div>
 
 <section id=drawing>
-  <div id="allTools">
+  <canvas id="canvas" width="600" height="500"></canvas>
+  <div id="Tools">
     <li class="tools" id="colors">
       <span>Choose a color: </span>
       <button id="choosePurple">Purple</button>
@@ -23,16 +24,14 @@
       <button id="chooseEraser">Eraser</button>
     </li>
 
-    <li class="tools" id="size">
-      <span class="highlight">Choose a brush size: </span>
-      <button id="chooseExtraSmall">Extra Small</button>
-      <button id="chooseSmall">Small</button>
-      <button id="chooseMedium">Medium</button>
-      <button id="chooseLarge">Large</button>
-      <button id="chooseHuge">Huge</button>
-    </li>
-
-    <canvas id="canvas" width="600" height="500"></canvas>
+  <li class="tools" id="size">
+    <span class="highlight">Choose a brush size: </span>
+    <button id="chooseExtraSmall">Extra Small</button>
+    <button id="chooseSmall">Small</button>
+    <button id="chooseMedium">Medium</button>
+    <button id="chooseLarge">Large</button>
+    <button id="chooseHuge">Huge</button>
+  </li>
 </section>
 
 <div id= instructions>

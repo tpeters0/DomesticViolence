@@ -1,10 +1,13 @@
 <div class="header">
+  <div id="return-to-wheel-link">
+    <%= link_to image_tag('wheel_text_logo.png'), stages_path, :title => "Return to Cycle" %>
+  </div>
 
   <h1><%= @stage.name %> Stage </h1>
-
+  <p><%= @stage.description %></p>
 </div>
 
-<p><%= @stage.description %></p>
+
 
 <container id="set-of-cards">
 <div class="card-grid">
@@ -63,9 +66,7 @@
       </div>
     </div>
   <% end %>
-  <div id="return-to-wheel-link">
-    <%= link_to image_tag('wheel_text_logo.png'), stages_path, :title => "Return to Cycle" %>
-  </div>
+
 </div>
 
 </container>
