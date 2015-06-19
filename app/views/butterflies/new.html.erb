@@ -1,16 +1,23 @@
-
-<div class="header">
-  <div id="bfly-icon">
-    <%= link_to butterflies_path(@butterflies) do %>
-    <%= image_tag ('butterfly-sm.png'), :title => "Return to Butterfly Gallery" %>
-    <% end %>
-  </div>
-
+<div class="header" id="bfly-header">
   <h1>Create a Butterfly</h1>
+  <p>Express yourself by designing a butterfly, a symbol of freedom and hope, with your thoughts regarding domestic abuse ...</p>
+
+
+</div>
+      <div class=nav>
+        <div id="bfly-icon">
+          <%= link_to butterflies_path(@butterflies) do %>
+          <%= image_tag ('butterfly-sm.png'), :title => "Return to Butterfly Gallery" %>
+          <% end %>
+        </div>
+        <div id= "instructions">
+          <p>Right click on created image to save.</p>
+          <p id="lil">Then, if you want to submit it to include in the butterfly gallery, upload the file below.</p>
+        </div>
 </div>
 
-<section id=drawing>
   <canvas id="canvas" width="600" height="500"></canvas>
+
   <div id="Tools">
     <li class="tools" id="colors">
       <span>Choose a color: </span>
@@ -32,10 +39,8 @@
     <button id="chooseLarge">Large</button>
     <button id="chooseHuge">Huge</button>
   </li>
-</section>
-
-<div id= instructions>
-  <p> Express yourself by designing a butterfly, a symbol of freedom and hope, with your thoughts regarding domestic abuse ... </p>
-  <p>Right click to save your created image.  Then, if you want to submit it to include in the butterfly gallery, upload the file below.</p>
 </div>
+
+<div id="submit-form">
   <%= render partial: "form" %>
+</dil>

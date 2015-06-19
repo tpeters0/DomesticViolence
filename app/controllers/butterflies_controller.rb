@@ -17,11 +17,15 @@ class ButterfliesController < ApplicationController
   def create
     @butterfly = Butterfly.new(butterfly_params)
 
+    respond_to do |f|
       if @butterfly.save
-        redirect_to(butterfly_path(@butterfly))
+        f.html { redirect_to(butterfly_path(@butterfly)) }
+        f.json { render json: @butterfly }
       else
-        render :new
+        f.html { render :new }
+        f.json { render json: @butterfly}
       end
+    end
   end
 
   def edit

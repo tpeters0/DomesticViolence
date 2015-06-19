@@ -15,24 +15,37 @@
  */
 
 .header{
-  /*display: inline-block;*/
-  width: 100%;
+  display: inline-block;
+  margin-left: 40%;
   height: 100px;
-  background-color: darkgray;
+  padding: 10px;
 }
 
 .nav {
-    line-height:30px;
+    top: 2%;
     background-color: black;
     height:350px;
     width:200px;
     float:left;
     left: 10%;
     padding: 15px;
-    position:relative;
+    position: absolute;
     display: inline-block;
     border-radius: 15px;
 }
+
+.nav-2{
+  top: 2%;
+  height:150px;
+  width:150px;
+  float:left;
+  left: 10%;
+  padding: 15px;
+  position: absolute;
+  display: inline-block;
+  border-radius: 15px;
+}
+
 
 #house{
   width: 150px;
@@ -43,8 +56,8 @@
 }
 
 #ribbon{
-  margin:20px;
-  float:right;
+  left: 30%;
+  text-align: center;
   position:relative;
 }
 
@@ -55,15 +68,24 @@
 
 #return-to-wheel-link{
   margin-left: 10%;
+  margin-right: 5%;
   padding-top: 15px;
   padding-bottom: 0px;
   width:150px;
   height: 150px;
   background-color: #7D59A4;
   border-radius: 20px;
-  display:inline-block;
   text-align: center;
-  vertical-align: middle;
+}
+
+#bfly-header{
+  margin-left: 40%;
+  width: 600px;
+}
+
+#descript-stage{
+  width: 80%;
+  margin-left: 15%;
 }
 
 #bfly-icon{
@@ -96,7 +118,7 @@ p{
   padding: 4px;
   text-align:center;
   font-size: 20px;
-  width: 60%;
+  /*width: 60%;*/
 }
 
 li{
@@ -118,26 +140,39 @@ body{
 
 #footer{
   text-align: center;
+  font-size: 18px;
   color: black;
   position:relative;
-  bottom: 0;
+  bottom: 10px;
   width: 100%;
-  margin-top: 20px;
+  margin: 30px;
+  margin-top: 50px;
 }
+
 
 .text-link{
   padding:20px;
 }
 
-section{
+#why-learn{
+  width: 600px;
+  height: 500px;
+  margin-left: 10%;
+  position: relative;
+}
+
+#landing-words{
   display:inline-block;
   text-align: center;
-  margin-left: 25%;
+  margin-left: 35%;
   margin-right: auto;
   width: 50%;
-  height: 500px;
+  height: 550px;
   background-color: darkgray;
   position:relative;
+  border-radius: 10px;
+  overflow: scroll;
+  padding:20px;
 }
 
 #tension:hover{
@@ -176,7 +211,6 @@ section{
   cursor: pointer;
 }
 
-
 #wheel-title{
   position:absolute;
   top:215px;
@@ -201,15 +235,11 @@ section{
   padding: 3px;
   border-radius: 10px;
   font-family: helvetica;
-
-
 }
 
 #turn:hover {
     cursor: pointer;
 }
-
-
 
 .style0{
   stroke:	#231F20;
@@ -228,6 +258,12 @@ section{
   stroke-width:	0.25;
   stroke-miterlimit:	10;
   fill:	#542D81;
+}
+
+#desc{
+  margin-left: 40%;
+  margin-top: 5%;
+  position:relative;
 }
 
 #set-of-cards{
@@ -310,16 +346,19 @@ section{
   margin-left: 20%;
 }
 
-#drawing{
-  position: relative;
-  display: inline-block;
-  width: 80%;
-}
+#makeBflyBtn{
 
-#allTools{
+  position:absolute;
+  left: 70%;
+  display:inline-block;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
   width: 200px;
-  display: inline;
-  position: relative;
+  background-color: white;
+  padding: 3px;
+  border-radius: 10px;
+  font-family: helvetica;
 }
 
 #canvas{
@@ -330,12 +369,21 @@ section{
   border: 2px solid black;
   position: absolute;
   padding: 2px;
-  margin-left: auto;
+  margin-left: 40%;
   margin-right: auto;
 }
 
-.tools{
-  text-align:right;
+#Tools{
+  position: relative;
+  height: 100px;
+  padding-top: 10px;
+  top: 500px;
+  margin-top: 20px;
+  left: 40%;
+}
+
+#show-bfly{
+  margin-left: 20%; 
 }
 
 .butterfly_actions{
@@ -348,25 +396,37 @@ section{
 }
 
 #butterflies{
+  display: block;
   text-align: center;
 }
 
 #instructions{
-  width: 60%;
-  float: right;
-  margin-right: 20%;
+  position:relative;
+  background-color: darkgray;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-top: 85%;
+  border-radius: 10px;
+}
+
+#lil{
+  padding-top: 0px;
 }
 
 #why_bfly{
-  margin-left: 25%;
+  left: 400px;
   margin-right: 25%;
   font-size: 20px;
   font-family: helvetica, sans-serif;
 }
 
-/*#btn-download{
-  color:black;
-  width: 100%;
-  display: inline;
-  text-align: center;
-}*/
+#submit-form{
+
+  position: relative;
+  top: 200px;
+  left: 10%;
+  text-align:left;
+  width: 150px;
+  border-radius: 10px;
+  padding 20px;
+}

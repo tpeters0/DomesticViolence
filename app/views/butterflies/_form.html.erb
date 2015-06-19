@@ -5,16 +5,21 @@
    <%= f.text_field           :title %>
   </p>
 
+  <!-- <p>
+    <%= f.label                :image, "url" %>
+   <%= f.text_area              :image %>
+  </p> -->
+
   <p>
    <%= f.file_field           :image %>
   </p>
 
-  <!-- <%= f.hidden_field     :image, :id => "hiddenCanvas"%> -->
+  <!-- <%= f.hidden_field          :image, :id => "hiddenCanvas"%> -->
 
   <!-- for implementing user and permissions -->
-  <!-- <p>
-  #   <%= f.hidden_field      :user_id %>
-  # </p> -->
+ <!-- <p>
+   <%= f.hidden_field      :user_id %>
+ </p>  -->
 
   <p>
    <%= f.submit               :value => "Upload Butterfly to Gallery"%>

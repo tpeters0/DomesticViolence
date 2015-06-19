@@ -326,15 +326,26 @@ $(document).ready(function(){
             	context.drawImage(outlineImage, drawingAreaX, drawingAreaY, drawingAreaWidth, drawingAreaHeight);
             }
 
+
+          //   $('#btnCanvas').mousedown(function(convert)
+          //   {
+          //     var dataURL =  canvas.toDataURL('image/png');
+          //     var data= JSON.stringify(dataURL);
+          //   $('#hiddenCanvas').val(data);
+           //
+          //  });
+
+          // $('#btnCanvas').mousedown(function(convert)
+          // {
+          //   var dataURL =  canvas.toDataURL('image/png');
+          //   // var data = dataURL.replace(/^data:image\/png;base64,/, "");
+          //   console.log(dataURL)
+          //   $('#hiddenCanvas').val(dataURL);
+          //
+          // });
+
     });
 
-    // $('#btnCanvas').mousedown(function(convert)
-    // {
-    //   var dataURL =  canvas.toDataURL('image/png');
-    //   // var data = dataURL.replace(/^data:image\/png;base64,/, "");
-    //   console.log(dataURL)
-    //   $('#hiddenCanvas').val(dataURL);
-    //
-    // });
 
- });
+
+  });

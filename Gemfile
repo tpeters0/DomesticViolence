@@ -35,13 +35,13 @@ gem 'rails_12factor', group: :production
 
 gem 'carrierwave-data', '~> 0.0.2'
 
-gem 'cloudinary'
+gem 'fabricjs-rails', '~> 2.0.0'
+
+# gem 'cloudinary'
 
 # gem 'carrierwave_direct'
 #
 # gem 'sidekiq'
-
-
 
 
 

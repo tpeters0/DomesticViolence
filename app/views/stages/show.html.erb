@@ -1,13 +1,14 @@
-<div class="header">
+<container class="nav-2">
   <div id="return-to-wheel-link">
     <%= link_to image_tag('wheel_text_logo.png'), stages_path, :title => "Return to Cycle" %>
   </div>
+</container>
 
   <h1><%= @stage.name %> Stage </h1>
-  <p><%= @stage.description %></p>
+
+<div id= descript-stage>
+  <p id=descript-stage><%= @stage.description %></p>
 </div>
-
-
 
 <container id="set-of-cards">
 <div class="card-grid">
@@ -70,3 +71,7 @@
 </div>
 
 </container>
+
+<div id="footer">
+  Domestic Abuse Awareness, © 2015
+</div>

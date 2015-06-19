@@ -1,18 +1,29 @@
 <div class="header">
-
-  <div id="home">
-    <%= link_to root_path do %>
-      <%= image_tag ('home_opt.svg'), :id => "house", :title => "Domestic Abuse Awareness Homepage" %>
-    <% end %>
-  </div>
-
-  <div id="wheel-link">
-    <%= link_to image_tag('wheel_text_logo.png'), stages_path, :title => "Learn About the Cycle of Abuse"  %>
-  </div>
-</div>
-
   <h1>Butterfly Gallery</h1>
+  <li id="makeBflyBtn"><%= link_to "Create butterfly", new_butterfly_path %></li>
+  <div class="nav" id="gal">
+    <div id="home">
+      <%= link_to root_path do %>
+        <%= image_tag ('home_opt.svg'), :id => "house", :title => "Domestic Abuse Awareness Homepage" %>
+      <% end %>
+    </div>
+
+    <div id="wheel-link">
+      <%= link_to image_tag('wheel_text_logo.png'), stages_path, :title => "Learn About the Cycle of Abuse"  %>
+    </div>
+  </div>
 </div>
+
+  <!-- <container id="why_bfly">
+
+      <li> Support awareness of abuse issues </li>
+      <li> Encourage victims to leave unhealthy relationships </li>
+      <li> Express pain that you or others have felt because of abuse </li>
+      <li> Let abusers know that their behavior is unacceptable </li>
+      <li> Let abusers know that they need to commit to getting real help to deal with their own tension in order to break the cycle.</li>
+      <li> Let victims know that they are not to blame.  It is not a weakness to seek help.  It takes courage to leave. <li>
+
+  </container> -->
 
 <ul id="butterflies">
   <% @butterflies.each do |butterfly| %>
@@ -22,14 +33,6 @@
   <% end %>
 </ul>
 
-
-<li id="tools"><%= link_to "Create butterfly", new_butterfly_path %></li>
-
-<ul id="why_bfly">
-  <li> Support awareness of abuse issues </li>
-  <li> Encourage victims to leave unhealthy relationships </li>
-  <li> Express pain that you or others have felt because of abuse </li>
-  <li> Let abusers know that their behavior is unacceptable </li>
-  <li> Let abusers know that they need to commit to getting real help to deal with their own tension in order to break the cycle.</li>
-  <li> Let victims know that they are not to blame.  It is not a weakness to seek help.  It takes courage to leave. <li>
-</ul>
+<div id="footer">
+  Domestic Abuse Awareness, © 2015
+</div>
