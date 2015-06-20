@@ -13,6 +13,12 @@
  *= require_tree .
  *= require_self
  */
+ @font-face {
+   font-family: 'SignPainter-HouseScript';
+   src: asset-url('SignPainter-HouseScript.ttf', font)  format('truetype'),
+   font-weight: normal;
+   font-style: normal;
+ }
 
 .header{
   display: inline-block;
@@ -383,7 +389,7 @@ body{
 }
 
 #show-bfly{
-  margin-left: 20%; 
+  margin-left: 20%;
 }
 
 .butterfly_actions{
