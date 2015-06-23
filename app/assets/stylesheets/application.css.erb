@@ -14,11 +14,19 @@
  *= require_self
  */
  @font-face {
-   font-family: 'SignPainterHouseScript';
-   src: url('SignPainterHouseScript.ttf')  format('truetype');
-   font-weight: normal;
-   font-style: normal;
+   font-family: 'SignPainter';
+   src: url('<%= asset_path('SignPainter.otf') %>')  format('opentype');
  }
+
+ /*@font-face {
+   font-family: 'fontello';
+   src: url('<%= asset_path("fontello.eot") %>');
+   src: url('<%= asset_path("fontello.eot#iefix") %>') format('embedded-opentype'),
+        url('<%= asset_path("fontello.woff") %>') format('woff'),
+        url('<%= asset_path("fontello.ttf") %>') format('truetype');
+ }*/
+
+
 
 .header{
   display: inline-block;
