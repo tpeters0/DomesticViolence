@@ -5,10 +5,6 @@
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
  *
  *= require_tree .
  *= require_self
@@ -65,13 +61,11 @@
   border-radius: 15px;
 }
 
-
 #house{
   width: 150px;
   position:relative;
   margin-top: 15px;
   margin-left: 25px;
-
 }
 
 #ribbon{
@@ -83,28 +77,6 @@
 #wheel-link{
   margin: 30px;
   margin-top: 10px;
-}
-
-#return-to-wheel-link{
-  margin-left: 10%;
-  margin-right: 5%;
-  padding-top: 15px;
-  padding-bottom: 0px;
-  width:150px;
-  height: 150px;
-  background-color: #7D59A4;
-  border-radius: 20px;
-  text-align: center;
-}
-
-#bfly-header{
-  margin-left: 40%;
-  width: 600px;
-}
-
-#descript-stage{
-  width: 80%;
-  margin-left: 15%;
 }
 
 #bfly-icon{
@@ -137,7 +109,6 @@ p{
   padding: 4px;
   text-align:center;
   font-size: 20px;
-  /*width: 60%;*/
 }
 
 li{
@@ -167,7 +138,6 @@ body{
   margin: 30px;
   margin-top: 50px;
 }
-
 
 .text-link{
   padding:20px;
@@ -260,7 +230,7 @@ body{
     cursor: pointer;
 }
 
-.style0{
+/*.style0{
   stroke:	#231F20;
   stroke-width:	3;
   stroke-miterlimit:	10;
@@ -271,181 +241,10 @@ body{
   stroke-width:	3;
   stroke-miterlimit:	10;
   fill:	none;
-}
-.style16{
+}*/
+.arrows{
   stroke:	#231F20;
   stroke-width:	0.25;
   stroke-miterlimit:	10;
   fill:	#542D81;
-}
-
-#desc{
-  margin-left: 40%;
-  margin-top: 5%;
-  position:relative;
-}
-
-#set-of-cards{
-  display: inline-block;
-  text-align:center;
-  width: 100%;
-}
-
-.card-grid {
-  margin: 10px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-
-}
-
-.card {
-  width: 300px;
-  height: 150px;
-  top:0px;
-}
-
-#behavior{
-  width: 300px;
-  height: 200px;
-}
-
-.front, .back {
-  border: 2px gray solid;
-  padding: 10px;
-}
-
-#behavior .front {
-  text-align:center;
-  background-color: #272750;
-  color: white;
-  padding-top: 10%;
-}
-
-.front {
-  text-align:center;
-  background-color: #AE6769;
-  color: white;
-  padding-top: 10%;
-}
-
-#behavior .back {
-  background-color: lightyellow;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top:5%;
-  font-size: 1.5em;
-}
-
-.back {
-  background-color: lightyellow;
-  text-align: center;
-  padding-top: 10%;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 1.5em;
-}
-
-#small-stage{
-  font-size: 1.25em;
-  padding: 5px;
-}
-
-#big-tude{
-  font-size: 2em;
-  padding: 10px;
-}
-
-.blank{
-  height: 20px;
-}
-
-.text-link{
-  margin-left: 20%;
-}
-
-#makeBflyBtn{
-
-  position:absolute;
-  left: 70%;
-  display:inline-block;
-  color: black;
-  text-align: center;
-  margin-top: 20px;
-  width: 200px;
-  background-color: white;
-  padding: 3px;
-  border-radius: 10px;
-  font-family: helvetica;
-}
-
-#canvas{
-  background-color: white;
-  display:block;
-  width: 600px;
-  height:500px;
-  border: 2px solid black;
-  position: absolute;
-  padding: 2px;
-  margin-left: 40%;
-  margin-right: auto;
-}
-
-#Tools{
-  position: relative;
-  height: 100px;
-  padding-top: 10px;
-  top: 500px;
-  margin-top: 20px;
-  left: 40%;
-}
-
-#show-bfly{
-  margin-left: 20%;
-}
-
-.butterfly_actions{
-  text-align: center;
-}
-
-.butterfly_image{
-  margin: auto;
-  text-align: center;
-}
-
-#butterflies{
-  display: block;
-  text-align: center;
-}
-
-#instructions{
-  position:relative;
-  background-color: darkgray;
-  padding-left: 4px;
-  padding-right: 4px;
-  margin-top: 85%;
-  border-radius: 10px;
-}
-
-#lil{
-  padding-top: 0px;
-}
-
-#why_bfly{
-  left: 400px;
-  margin-right: 25%;
-  font-size: 20px;
-  font-family: helvetica, sans-serif;
-}
-
-#submit-form{
-
-  position: relative;
-  top: 200px;
-  left: 10%;
-  text-align:left;
-  width: 150px;
-  border-radius: 10px;
-  padding 20px;
 }

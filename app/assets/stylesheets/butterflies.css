@@ -1,0 +1,93 @@
+.text-link{
+  margin-left: 20%;
+}
+
+#bfly-header{
+  margin-left: 40%;
+  width: 600px;
+}
+
+#makeBflyBtn{
+
+  position:absolute;
+  left: 70%;
+  display:inline-block;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+  width: 200px;
+  background-color: white;
+  padding: 3px;
+  border-radius: 10px;
+  font-family: helvetica;
+}
+
+#canvas{
+  background-color: white;
+  display:block;
+  width: 600px;
+  height:500px;
+  border: 2px solid black;
+  position: absolute;
+  padding: 2px;
+  margin-left: 40%;
+  margin-right: auto;
+}
+
+#Tools{
+  position: relative;
+  height: 100px;
+  padding-top: 10px;
+  top: 500px;
+  margin-top: 20px;
+  left: 40%;
+}
+
+#show-bfly{
+  margin-left: 20%;
+}
+
+.butterfly_actions{
+  text-align: center;
+}
+
+.butterfly_image{
+  margin: auto;
+  text-align: center;
+}
+
+#butterflies{
+  display: block;
+  text-align: center;
+}
+
+#instructions{
+  position:relative;
+  background-color: darkgray;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-top: 85%;
+  border-radius: 10px;
+}
+
+#little-instruction{
+  padding-top: 0px;
+}
+
+#why_bfly{
+  left: 400px;
+  margin-right: 25%;
+  font-size: 20px;
+  font-family: helvetica, sans-serif;
+}
+
+#submit-form{
+
+  position: relative;
+  top: 200px;
+  left: 10%;
+  text-align:left;
+  width: 150px;
+  border-radius: 10px;
+  padding 20px;
+}
