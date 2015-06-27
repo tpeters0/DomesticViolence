@@ -27,9 +27,9 @@
 
 <ul id="butterflies">
   <% @butterflies.each do |butterfly| %>
-
   <li><%= link_to butterfly.title, butterfly_path(butterfly) %></li>
-  <%= image_tag butterfly.image_url(:thumb).to_s %>
+  <% thumbnail = image_tag butterfly.image_url(:thumb).to_s %>
+  <%= link_to thumbnail, butterfly_path(butterfly) %>
   <% end %>
 </ul>
 
