@@ -43,6 +43,41 @@
   left: 40%;
 }
 
+#choosePurple{
+  background-color: purple;
+  color: white;
+}
+
+#chooseGreen{
+  background-color: #659b41;
+  color: white;
+}
+
+#chooseYellow{
+  background-color: #ffcf33;
+  color: black;
+}
+
+#chooseBrown{
+  background-color: #986928;
+  color: white;
+}
+
+#chooseRed{
+  background-color: red;
+  color: white;
+}
+
+#chooseBlue{
+  background-color: blue;
+  color: white;
+}
+
+#chooseBlack{
+  background-color: black;
+  color: white;
+}
+
 #show-bfly{
   margin-left: 20%;
 }
